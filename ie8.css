@@ -1,0 +1,9 @@
+input#s {
+	top:1px;
+}
+input#searchsubmit {
+	background:url(img/normal.gif) no-repeat right -2px;
+}
+input:hover#searchsubmit {
+	background: url(img/hover2.gif) no-repeat right -2px;
+}
