@@ -43,5 +43,5 @@
     </div>
 </div>
 <!--[if IE 6]>
-<div id="anti_ie6" <?php if($_COOKIE['cloaseAntiIE']==1){echo 'class="hidden"';}?>><p>尊敬的用户，您正在使用老掉牙的IE 6.0，我们强烈推荐您升级为<a target="_blank"  href="http://bit.ly/2zx2V">符合Web标准的浏览器</a>，更快，更好，更安全！<strong><a href="#">X</a></strong></p></div>
+<div id="anti_ie6" <?php if($_COOKIE['cloaseAntiIE']==1){echo 'class="hidden"';}?>><p>尊敬的用户，您正在使用老掉牙的IE 6.0，我们强烈推荐您升级为<a target="_blank"  href="http://is.gd/5Gjxa">符合Web标准的浏览器</a>，更快，更好，更安全！<strong><a href="#">X</a></strong></p></div>
 <![endif]-->
