@@ -1,8 +1,8 @@
-jQuery(function(){
+jQuery(function($){
 //修正大尺寸图片大小
-	jQuery('img').each(function(){ 
+	$('img').each(function(){ 
 		if(this.width>800){
-			jQuery(this).width(800);
+			$(this).width(800);
 	}}); 
 //导航fixed
   $(window).scroll(function() {
@@ -10,8 +10,8 @@ jQuery(function(){
     $('#scroll').css('top', 500 + $(this).scrollTop() + "px");
   });
 //anti IE6
-  jQuery('#anti_ie6 p strong a').click(function(){
-    jQuery('#anti_ie6').fadeOut('slow');
+  $('#anti_ie6 p strong a').click(function(){
+    $('#anti_ie6').fadeOut('slow');
     setCookie('closeAnti',true,7);
   });
 });
