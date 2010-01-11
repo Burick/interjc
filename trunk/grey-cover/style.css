@@ -1,0 +1,569 @@
+/*  
+Theme Name: GreyCover
+Version: 1.0
+Theme URI: http://interjc.net/dev/greycover
+Description:灰色CMS主题，有点小众。主流功能基本齐全。通过标准验证。希望您喜欢！有意见或建议或关注后续版本请至<a href="http://interjc.net/dev/greycover">开发页面</a>。欢迎Follow me via Twitter: @<a href="http://twitter.com/interjc">interjc</a>
+Author: interjc
+Author URI: http://interjc.net/
+@License(GPL):http://www.gnu.org/licenses/gpl.html
+*/
+
+/*Global Set*/
+* {
+	margin:0;
+	outline:none;
+	padding:0;
+}
+body {
+	background:#d5d5d5;
+	font:12px Verdana, Geneva, sans-serif;
+	text-align:center;
+}
+img {
+	border:none;
+	height:auto;
+	max-width:90%;
+}
+a {
+	color: #006799;
+	text-decoration:none;
+}
+a:hover, a:active {
+	text-decoration: underline;
+	text-shadow: #EEE 1px 1px 1px;
+}
+h1 {
+	font-size:24px;
+	line-height:24px;
+}
+h2 {
+	font-size:18px;
+	line-height:18px;
+}
+h3 {
+	font-size:16px;
+	line-height:16px;
+}
+h4 {
+	font-size:14px;
+	line-height:14px;
+}
+h5 {
+	font-size:12px;
+	line-height:12px;
+}
+h6 {
+	font-size:11px;
+	line-height:11px;
+}
+#wrap {
+	margin:46px auto;
+	text-align:left;
+	width:780px;
+}
+/*Main Container*/
+#container {
+	border-bottom:1px solid #8e8e8e;
+	height:1%;
+	overflow:auto;
+	padding-bottom:10px;
+}
+/*Sidebar*/
+#sidebar-boxer {
+	background:#e6e7e5 url(images/sidebar-bg.jpg) repeat-y left;
+	float:left;
+	line-height:18px;
+	width:260px;
+}
+#sidebar-box {
+	background:url(images/sidebar-bg-top.jpg) no-repeat top left;
+}
+#sidebar {
+	background: url(images/sidebar-bg-bottom.jpg) no-repeat bottom left;
+}
+#logo {
+	background:url(images/sidebar-line-260.jpg) no-repeat bottom left;
+	text-align:center;
+	padding:27px 0 15px 0;
+}
+#logo h1 {
+	font-size:20px;
+}
+#logo h1 a {
+	background: url(images/logo.jpg) no-repeat center top;
+	color:#625d5a;
+	display:block;
+	line-height:40px;
+	padding:80px 0 0 0;
+	text-align:center;
+}
+#logo h1 a:hover {
+	background:url(images/logo-hover.jpg) no-repeat center top;
+	color: #206bbc;
+	text-decoration:none;
+}
+/*widget-box*/
+#widget-box {
+	padding:10px;
+}
+#widget-box ul {
+	list-style:none;
+}
+#widget-box ul li h2 {
+	font-size:16px;
+	line-height:20px;
+}
+#widget-box ul li.widget {
+	padding:0 0 10px 0;
+}
+#widget-box ul li.widget li {
+	padding:0 5px 5px 0;
+}
+#widget-box ul li.widget li ul {
+	padding:0 0 0 10px;
+}
+#widget-box ul li.widget li ul li {
+	border-left:3px solid #d5d5d5;
+	padding:0 0 0 5px;
+}
+#widget-box ul li.widget h2 {
+	padding:5px 5px 10px 2em;
+}
+#widget-box ul li.widget-even h2 {
+	background:url(images/sidebar-line-h2-even.jpg) no-repeat left 18px;
+}
+#widget-box ul li.widget-odd h2 {
+	background:url(images/sidebar-line-h2-odd.jpg) no-repeat left 18px;
+	padding-right:2em;
+	text-align:right;
+}
+/*widget*/
+
+/*widget-news*/
+.widget-news li p {
+	position:relative;
+	padding-left:20px;
+}
+.widget-news li p span {
+	color: #006799;
+	float:left;
+	font:14px "Comic Sans MS", cursive;
+	font-weight:bold;
+	left:0;
+	position:absolute;
+	top:0;
+}
+* html .widget-news li p span {
+	left:-20px;
+}
+/*widget-about*/
+.widget-about p {
+	padding:0 0 0 10px;
+}
+/*widget_recent_entries*/
+#widget-box ul li.widget_recent_entries li, .widget_recent_entries li {
+	background:url(images/icon-new-posts.png) no-repeat left 1px;
+	padding-left:20px;
+}
+/*Content Right*/
+#main {
+	float:left;
+	width:520px;
+}
+#nav {
+	background:#d5d5d5;
+	height:38px;
+	font-weight:bold;
+	line-height:38px;
+	overflow:hidden;
+	padding:0 10px;
+}
+#nav ul {
+	list-style:none;
+}
+#nav ul li {
+	float:left;
+	padding:0 8px;
+}
+#nav ul li.nav-li-notlast {
+	background:url(images/nav-line.gif) no-repeat right 20px;
+}
+#nav ul li a {
+	color: #4F4F4F;
+}
+#nav ul li a:hover, #nav ul li a:active, #nav li.current_page_item a {
+	color: #206bbc;
+	text-decoration:none;
+	text-shadow:#fff 1px 1px 1px;
+}
+/*Slider*/
+#slider {
+	background:#d5d5d5 url(images/slider-bg.jpg) no-repeat;
+	height:185px;
+	position:relative;
+}
+#slider-box {
+	height:175px;
+	padding:5px 15px;
+	width:490px;
+}
+#slider-boxer ul {
+	list-style:none;
+}
+#slider-boxer ul li.slider-li {
+	overflow:hidden;
+}
+/*Control*/
+#slider-control {
+	top:14px;
+	position:absolute;
+	right:12px;
+}
+#slider-control a {
+	background:url(images/slider-control-btn-hover.png) no-repeat;
+	display:block;
+	float:left;
+	height:29px;
+	width:22px;
+	text-indent:-10000px;
+}
+#slider-control a:hover {
+	background-image:url(images/slider-control-btn.png);
+}
+#slider-pre a {
+	background-position:left top;
+}
+#slider-next a {
+	background-position:right top;
+}
+/*slider inside*/
+.slider-story {
+	height:175px;
+	width:490px;
+}
+.slider-meta {
+	border-bottom:1px solid #fff;
+}
+.slider-meta h2 {
+	font-size:20px;
+	height:28px;
+	line-height:28px;
+	overflow:hidden;
+}
+.slider-meta h2 a:hover {
+	color: #37BEFF;
+	text-decoration:none;
+}
+.slider-meta p.slider-postmetadata {
+	border-bottom:1px solid #ccc;
+	font-size:11px;
+	height:22px;
+	line-height:22px;
+	overflow:hidden;
+}
+.slider-entry {
+	clear:both;
+	padding-top:5px;
+}
+.slider-entry-content {
+	height:90px;
+	overflow:hidden;
+	padding-left:5px;
+}
+.slider-readmore {
+	background:url(images/icon-new-posts.png) no-repeat 415px 7px;
+	display:block;
+	line-height:20px;
+	padding-top:5px;
+	text-align:right;
+}
+/*slider-simg*/
+.slider-simg {
+	float:left;
+	height:100px;
+	width:200px;
+}
+/*Content*/
+#content {
+	background:#d5d5d5 url(images/content-bg.jpg) repeat-y;
+}
+#content-in {
+	background:url(images/content-bg-top.jpg) no-repeat top left;
+}
+#content-inner {
+	background:url(images/content-bg-bottom.jpg) no-repeat bottom left;
+	height:1%;
+	overflow:auto;
+	padding:15px 20px;
+}
+#content-inner .widget h2 {
+	background:url(images/sidebar-line-h2-even.jpg) no-repeat -20px 24px;
+	text-align:center;
+	width:200px;
+}
+#content-inner .widget-odd h2 {
+	background:url(images/sidebar-line-h2-odd.jpg) no-repeat left 24px;
+}
+/*CMS*/
+.widget-inner {
+	width:230px;
+	float:left;
+	line-height:20px;
+	padding:0 0 0 10px;
+}
+.widget-inner .widget {
+	padding:0 0 10px 0;
+}
+.widget-inner ul {
+	list-style:none;
+}
+.widget-inner h2 {
+	line-height:30px;
+}
+#widget-left {
+	background:url(images/widget-middle-line.jpg) no-repeat right top;
+}
+/*Widget*/
+.pagenav li ul {
+	padding-left:10px;
+}
+.pagenav li ul li {
+	border-left:3px solid #d5d5d5;
+	padding-left:5px;
+}
+/*Posts*/
+.story {
+	padding:0 5px 15px 5px;
+}
+.entry {
+	line-height:140%;
+}
+.entry-content {
+	overflow:hidden;
+	padding:10px 0;
+}
+.entry-content a:hover {
+	text-decoration:underline;
+}
+.entry-content ul, .entry-content dl, .entry-content ol {
+	padding:0 0 0 24px;
+}
+.postmetadata {
+}
+.navigation {
+	height:24px;
+	line-height:24px;
+	position:relative;
+}
+.navigation .nav_prev {
+	left:0;
+	position:absolute;
+}
+.navigation .nav_next {
+	position:absolute;
+	right:0;
+}
+/*Comments Template*/
+.comments-template {
+	border-top:1px solid #8e8e8e;
+}
+.comments-templates {
+	border-top:1px solid #F6F6F6;
+	line-height:140%;
+	padding:5px 0 0 0;
+}
+.comments-templates h3 {
+	line-height:20px;
+	padding-bottom:5px;
+}
+.comments-templates ol {
+	list-style:none;
+}
+.comment_li {
+	margin:0 0 5px 0;
+	padding:5px;
+}
+.comment_li_odd {
+	background: #505050;
+	color:#FFF;
+}
+.comment_li_odd a {
+	color: #D7F2FF;
+	text-shadow:#666;
+}
+.comment_li .avatar {
+	float:left;
+	height:32px;
+	width:32px;
+}
+.comment-meta {
+	float:left;
+	padding-left:5px;
+}
+.commentmetadata {
+	display:block;
+	line-height:16px;
+}
+.comment_text {
+	padding:5px 0;
+}
+#respond {
+	line-height:20px;
+	padding:0 10px;
+}
+#respond p {
+	padding:0 0 5px 0;
+}
+/*玩聚SR*/
+.SRBacks {
+	border-left:3px solid #505050;
+	margin:10px 0 0 10px;
+	padding:3px 0 3px 5px;
+}
+/*Footer*/
+#footer {
+	border-top:1px solid #F6F6F6;
+	height:23px;
+	line-height:23px;
+	padding:5px 0;
+	position:relative;
+	text-align:center;
+}
+#footer ul {
+	list-style:none;
+}
+#footer ul li {
+	display:inline;
+}
+#copyright {
+	float:left;
+	width:260px;
+}
+#footer-links {
+	float:left;
+	width:520px;
+}
+a.footer-feed{ position:absolute; left:5px; top:8px;}
+/* 日历 */
+#wp-calendar {
+	empty-cells: show;
+	padding:5px;
+	width: 170px;
+}
+#wp-calendar #next a {
+	padding-right: 10px;
+	text-align: right;
+}
+#wp-calendar #prev a {
+	padding-left: 10px;
+	text-align: left;
+}
+#wp-calendar a {
+	display: block;
+}
+#wp-calendar caption {
+	text-align: center;
+}
+#wp-calendar td {
+	padding: 0;
+	text-align: center;
+}
+/*搜索*/
+.searchform {
+	height:21px;
+	position:relative;
+}
+.searchform-text {
+	font-size:14px;
+	height:21px;
+	line-height:21px;
+	padding:1px 28px 1px 1px;
+	width:152px;
+}
+.searchform-submit {
+	background:url(images/icon-search.png) no-repeat;
+	border:none;
+	height:21px;
+	left:154px;
+	position:absolute;
+	text-indent:-10000px;
+	top:3px;
+	width:28px;
+}
+.searchform-submit:hover {
+	background-position:right top;
+}
+/*日历 */
+#wp-calendar {
+	empty-cells: show;
+	padding:5px;
+	width: 90%;
+}
+#wp-calendar #next a {
+	padding-right: 10px;
+	text-align: right;
+}
+#wp-calendar #prev a {
+	padding-left: 10px;
+	text-align: left;
+}
+#wp-calendar a {
+	display: block;
+}
+#wp-calendar caption {
+	font-size:14px;
+	font-weight:bold;
+	text-align: center;
+}
+#wp-calendar td, #wp-calendar th {
+	padding: 0;
+	text-align: center;
+}
+/*链接*/
+.linkcat li {
+	background:url(images/icon_link.png) no-repeat left center;
+	padding:2px 0 2px 18px;
+}
+/*分类*/
+.widget_categoryposts {
+}
+.widget_categoryposts li.cat-post-item {
+	padding-bottom:5px;
+}
+.widget_categoryposts li.cat-post-item a.post-title {
+	display:block;
+	padding-left:18px;
+	background:url(images/icon-new-posts.png) no-repeat left center;
+}
+.widget_categoryposts li.cat-post-item p {
+	width:220px;
+	overflow:hidden;
+}
+/*分类目录*/
+.widget_categories li.cat-item {
+	padding:0 0 0 18px;
+	background:url(images/icon_tab.png) no-repeat left center;
+}
+/*标签*/
+.widget_tag_cloud {
+	padding:0 5px;
+	clear:both;
+	height:1%;
+	overflow:auto;
+}
+.widget_tag_cloud a {
+	display:block;
+	float:left;
+	padding:2px 5px 2px 16px;
+	background:url(images/icon_tag.png) no-repeat left 8px;
+	line-height:24px;
+}
+/*功能*/
+#widget-box ul li.widget_meta li,.widget_meta li{ padding:0 0 0 18px; background:url(images/icon-cog.png) no-repeat left center;}
+/*Others*/
+.clear {
+	clear:both;
+	height:0;
+	line-height:0;
+	border:none;
+}
