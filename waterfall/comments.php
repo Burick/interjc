@@ -107,13 +107,12 @@
 
 <?php else : ?>
 
-<p><input type="text" name="author" id="author" value="<?php echo esc_attr($comment_author); ?>" size="22" tabindex="1" <?php //if ($req) echo "aria-required='true'"; ?> />
+<p class="welcome-back">欢迎回来，<strong></strong>！</p>
+<p class="welcome-new"><input type="text" name="author" id="author" value="<?php echo esc_attr($comment_author); ?>" size="22" tabindex="1" <?php //if ($req) echo "aria-required='true'"; ?> />
 <label for="author">名字<?php if ($req) echo "*"; ?></label></p>
-
-<p><input type="text" name="email" id="email" value="<?php echo esc_attr($comment_author_email); ?>" size="22" tabindex="2" <?php //if ($req) echo "aria-required='true'"; ?> />
+<p class="welcome-new"><input type="text" name="email" id="email" value="<?php echo esc_attr($comment_author_email); ?>" size="22" tabindex="2" <?php //if ($req) echo "aria-required='true'"; ?> />
 <label for="email">邮箱(不会公布) <?php if ($req) echo "*"; ?></label></p>
-
-<p><input type="text" name="url" id="url" value="<?php echo esc_attr($comment_author_url); ?>" size="22" tabindex="3" />
+<p class="welcome-new"><input type="text" name="url" id="url" value="<?php echo esc_attr($comment_author_url); ?>" size="22" tabindex="3" />
 <label for="url">网址</label></p>
 
 <?php endif; ?>
