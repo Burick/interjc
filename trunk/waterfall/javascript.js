@@ -116,6 +116,12 @@ jQuery(function($){
     );
   }
   $('ol.commentlist>li:odd').addClass('comment_odd');
+  //welcome back
+  if($('#commentform #author').attr('value')!=''){
+    var commentAuthor = $('#commentform #author').attr('value');
+    $('.welcome-back').addClass('show').children('strong').append(commentAuthor);
+    $('.welcome-new').addClass('hidden');
+  }
 	//侧边栏样式
 	$('.pagenav,.linkcat').addClass('widget');    
 	//自定义链接样式
