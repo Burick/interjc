@@ -177,10 +177,10 @@ li.widget_bb_blc_latestcomments ul li small a { font-size:11px; }
 /*Zelig Show Plugin*/
 .plugins-list{line-height:20px;}
 .plugins-list table{margin-bottom:10px; padding-bottom:10px; border-bottom:1px dotted #ccc;}
-.plugins-list table tr{vertical-align:top; display:block; margin-bottom:10px; height:1%; overflow:auto; clear:both;}
+.plugins-list table tr{vertical-align:top; display:block; margin-bottom:10px; overflow:auto; clear:both;}
 .plugins-list table tr td{float:left;}
 .plugins-list .td-1{width:15%;}
-.plugins-list .td-2{width:10%;}
+.plugins-list .td-2{width:10%; text-align:center;}
 .plugins-list .td-3{width:75%;}
 .alternate-plug-row{}
 .plug-row{background:#d7fafa;}
