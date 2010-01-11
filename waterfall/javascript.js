@@ -141,14 +141,16 @@ jQuery(function($){
   if($.browser.msie && $.browser.version==7){
     $('#searchreset,#searchsubmit').css({'top':'3px'});
   }
+  //Zelig-Plugin
+  $('.plugins-list tbody tr').each(function(){
+    $(this).children('td:eq(0)').addClass('td-1');
+    $(this).children('td:eq(1)').addClass('td-2');
+    $(this).children('td:eq(2)').addClass('td-3');
+  });
+  // $('.plugins-list tbody tr td:eq(0)').addClass('td-1');
+  // $('.plugins-list tbody tr td:eq(1)').addClass('td-2');
+  // $('.plugins-list tbody tr td:eq(2)').addClass('td-3');
   //返回页首
-  /* $('a.back-to-top').click(function(){
-      $('html, body').animate(
-          {scrollTop: 0},
-          800
-          );
-      return false;
-  }); */
   $('a.back-to-top').click(function(){
     $('html, body').animate(
       {scrollTop: 0},

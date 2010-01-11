@@ -1,3 +1,8 @@
+<?php
+/*
+Template Name: Archives
+*/
+?>
 <?php get_header(); ?>
     <div id="main">
         <div id="content">
@@ -7,7 +12,7 @@
                 <h2><a href="<?php the_permalink();?>" title="<?php the_title();?>">
                     <?php the_title();?>
                     </a></h2>
-                    <div class="meta"><?php echo get_avatar( get_the_author_email(), 40 ); ?><p><?php the_author() ?> [<?php the_category(',') ?>]</p><p><?php the_time('Y.m.d') ?></p></div>
+                    <!--<div class="meta"><?php echo get_avatar( get_the_author_email(), 40 ); ?><p><?php the_author() ?> [<?php the_category(',') ?>]</p><p><?php the_time('Y.m.d') ?></p></div>-->
                 <div class="entry">
 
 <?php if (function_exists('af_ela_super_archive')) {
