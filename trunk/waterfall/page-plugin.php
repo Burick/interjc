@@ -1,3 +1,8 @@
+<?php
+/*
+Template Name: Plugins
+*/
+?>
 <?php get_header(); ?>
     <div id="main">
         <div id="content">
@@ -7,9 +12,9 @@
                 <h2><a href="<?php the_permalink();?>" title="<?php the_title();?>">
                     <?php the_title();?>
                     </a></h2>
-                    <div class="meta"><?php echo get_avatar( get_the_author_email(), 40 ); ?><p><?php the_author() ?> [<?php the_category(',') ?>]</p><p><?php the_time('Y.m.d') ?></p></div>
+                    <!--<div class="meta"><?php echo get_avatar( get_the_author_email(), 40 ); ?><p><?php the_author() ?> [<?php the_category(',') ?>]</p><p><?php the_time('Y.m.d') ?></p></div>-->
                 <div class="entry">
-                <?php zelig_show_plugins(); ?>
+                <?php zelig_show_plugins('description=1'); ?>
                     <?php the_content('<br /><span class="readmore">阅读全文&raquo;</span>');?>
                     <br class="clear" />
                     <?php link_pages('<p class="page_nav"><strong>Pages:</strong>','</p>', 
