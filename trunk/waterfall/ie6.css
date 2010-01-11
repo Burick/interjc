@@ -13,3 +13,4 @@ li.comment_odd { background:none; }
 .comment_text .thdrpy{ top:-40px;}
 .comment-childs .thdrpy{ top:5px;}
 .thdrpy a span{background-image:url(img/reply.gif);}
+.plugins-list table tr{height:1%;}
