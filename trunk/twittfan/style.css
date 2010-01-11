@@ -1,0 +1,265 @@
+/*  
+Theme Name: TwittFan
+Version: 1.2
+Theme URI: http://interjc.net/dev/twittfan
+Description: 为喜欢<a href="http://twitter.com">Twitter</a>的朋友设计的一款Wordpress Theme。 在上一版本基础上做了少许修改，使界面更加清爽、美观、实用。通过标准验证。希望您喜欢！有意见或建议或关注后续版本请至<a href="http://interjc.net/dev/twittfan">开发页面</a>。  欢迎Follow me via Twitter: @<a href="http://twitter.com/interjc">interjc</a>
+Author: interjc
+Author URI: http://interjc.net/
+@License(GPL):http://www.gnu.org/licenses/gpl.html
+*/
+
+* {
+	margin:0;
+	padding:0;
+	outline:0;
+}
+body {
+	font:12px Verdana, Arial, Helvetica, sans-serif;
+	background:#0099B9 url(img/bg.gif) no-repeat fixed;
+	text-align:center;
+}
+img, embed {
+	max-width:95%;
+	height:auto;
+	border:0 none;
+	margin:5px 0;
+}
+ul {
+	list-style:none;
+}
+blockquote {
+	margin:5px 10px;
+	padding:5px;
+	background:#95E8EC;
+}
+blockquote p {
+	border-left:thick solid #0099b9;
+	padding-left:5px;
+}
+a {
+	color:#0099B9;
+	text-decoration:none;
+}
+a:hover {
+	text-decoration:underline;
+}
+h1 {
+	font-size: 24px;
+}
+h2 {
+	font-size:18px;
+}
+#wrap {
+	text-align:left;
+	margin:0 auto;
+	width:763px;
+}
+#header {
+	line-height:31px;
+	padding:10px 0;
+}
+#header a, #header p {
+	color:#0099B9;
+}
+#header h1 {
+/*	padding-right:10px;  */
+}
+#header h1, #header p {
+	display:inline;
+}
+#header h1 a:hover, #header p a:hover {
+	color:#FFF;
+	text-decoration:none;
+	background:#0099B9;
+}
+#header_page {
+	background:#FFF;
+	float:right;
+	margin-top:1px;
+	padding:0 5px;
+}
+#header_page li {
+	display:inline;
+}
+#header_page li a {
+	line-height:30px;
+	padding:6px 3px;
+	color:#0099B9;
+}
+/*主容器*/
+#main {
+	background:#95E8EC;
+}
+/*侧边栏*/
+#sidebar {
+	background:#95E8EC;
+	width:198px;
+	float:right;
+}
+#sidebar ul {
+	padding:5px;
+}
+#sidebar h2 {
+	font-size:14px;
+	padding-left:10px;
+}
+#sidebar h3 {
+	font-size:14px;
+	padding:0 0 0 10px;
+}
+#sidebar a {
+	line-height:20px;
+	padding:0 8px;
+}
+
+#sidebar .li_lul {
+	background:#A9FCFF;
+}
+#sidebar .ul_lulu {
+	padding-left:1em;
+}
+/*文章内容*/
+#content {
+	margin-right:198px;
+	background:#FFF;
+	border-right:1px solid #0099B9;
+	padding:10px 0;
+}
+#content div.story {
+	border-bottom:1px dashed #D2DADA;
+	padding-bottom:10px;
+	margin:10px 15px 0 15px;
+}
+#content div.story_hover {
+	background: #CFF;
+}
+#content div.story h2 {
+	padding-bottom:5px;
+	text-transform:capitalize;
+}
+#content div.entry {
+	padding-top:10px;
+	overflow: auto;
+	height:1%;
+}
+#content div.entry p{
+	padding-bottom:10px;
+}
+#content p.postmetadata {
+	padding-top:10px;
+}
+.navigation {
+	margin:10px 15px 0 15px;
+	text-align:center;
+}
+.navigation a {
+	display:block;
+	text-decoration:none;
+	line-height:20px;
+	background:#95E8EC;
+}
+.navigation a:hover {
+	background:#0099B9;
+	color:#FFF;
+}
+#comments_template {
+	margin:10px 20px;
+}
+#comments_template img.avatar {
+	float:left;
+	margin:0 5px;
+}
+#comments_template ol.commentlist {
+	list-style:none;
+}
+#comments_template ol.commentlist li {
+	clear:left;
+	margin:5px 0 5px 0;
+	padding:5px 0 5px 0;
+	background:#A9FCFF;
+}
+#comments_template ol.commentlist li p {
+	margin:5px 5px 0 5px;
+}
+#respond p {
+	margin:10px 0;
+}
+#footer {
+	background:#FFF;
+	margin:10px 0;
+	text-align:center;
+}
+#footer ul {
+	line-height:12px;
+	padding:6px 0;
+}
+#footer ul li {
+	display:inline;
+}
+#footer ul li a {
+	padding:0 3px;
+}
+/*日历*/
+#calendar {
+	width:190px;
+	margin:0 auto;
+}
+#calendar h2 {
+	text-indent:-5px;
+}
+#calendar a {
+	display:inline;
+}
+#calendar th, #calendar td {
+	width:27px;
+	text-align:center;
+}
+#prev a, #next a {
+	display:block;
+	width:54px;
+}
+/* 搜索框 */
+#search {
+	margin:5px 10px;
+}
+/* Captions */
+.aligncenter, div.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.wp-caption {
+	border: 1px solid #ddd;
+	text-align: center;
+	background-color: #f3f3f3;
+	padding-top: 4px;
+	margin: 10px;
+}
+.wp-caption img {
+	margin: 0;
+	padding: 0;
+	border: 0 none;
+}
+.wp-caption p.wp-caption-text {
+	font-size: 11px;
+	line-height: 17px;
+	padding: 0 4px 5px;
+	margin: 0;
+}
+/* End captions */
+
+img.wp-smiley {
+	margin: 0;
+	padding: 0;
+	clear: none;
+	border:0;
+	float: none;
+}
+.clear {
+	clear:both;
+    height:0;
+	line-height:0;
+}
+.none{
+    display:none;
+}
