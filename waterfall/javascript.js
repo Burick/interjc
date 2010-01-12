@@ -122,7 +122,22 @@ jQuery(function($){
     $('.welcome-back').addClass('show').children('strong').append(commentAuthor);
     $('.welcome-new').addClass('hidden');
   }
-	//侧边栏样式
+  $('.welcome-back .comment-reset').click(function(){
+    $('.welcome-back').removeClass('show').siblings('.welcome-new').slideDown().children('input').attr('value','');
+    return false;
+  });
+  //评论 Ctrl+Enter
+  $('#commentform input,#commentform textarea').keydown(function(e){
+    commentCtrlEnter(e);
+  });
+  function commentCtrlEnter(evt){
+    evt = (evt) ? evt : ((window.event) ? window.event : "") //兼容IE和Firefox获得keyBoardEvent对象
+    var key = evt.keyCode?evt.keyCode:evt.which; //兼容IE和Firefox获得keyBoardEvent对象的键值
+    if(evt.ctrlKey && (key == 13 || key == 10)){ //同时按下了Ctrl和回车键
+      $('#commentform :submit').click();
+    }
+  }
+  //侧边栏样式
 	$('.pagenav,.linkcat').addClass('widget');    
 	//自定义链接样式
 	$('#better-blogroll a[rel="co-worker"]').addClass('co-worker'); 

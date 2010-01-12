@@ -107,7 +107,7 @@
 
 <?php else : ?>
 
-<p class="welcome-back">欢迎回来，<strong></strong>！</p>
+<p class="welcome-back">欢迎回来，<strong></strong>！&nbsp;(<a href="#" class="comment-reset"> 更改用户 </a>)</p>
 <p class="welcome-new"><input type="text" name="author" id="author" value="<?php echo esc_attr($comment_author); ?>" size="22" tabindex="1" <?php //if ($req) echo "aria-required='true'"; ?> />
 <label for="author">名字<?php if ($req) echo "*"; ?></label></p>
 <p class="welcome-new"><input type="text" name="email" id="email" value="<?php echo esc_attr($comment_author_email); ?>" size="22" tabindex="2" <?php //if ($req) echo "aria-required='true'"; ?> />
@@ -119,8 +119,7 @@
 
 <!--<p><small><strong>XHTML:</strong> You can use these tags: <code><?php echo allowed_tags(); ?></code></small></p>-->
 
-<p><textarea name="comment" id="comment" cols="50%" rows="10" tabindex="4" onkeydown="if(event.ctrlKey&amp;&amp;event.keyCode==13)
-{document.getElementById('submit').click();return false};"></textarea></p>
+<p><textarea name="comment" id="comment" cols="50%" rows="10" tabindex="4"></textarea></p>
 
 <p><input name="submit" type="submit" id="submit" class="comment_submit" tabindex="5" value="提交" />
 <span class="comment_submit">输入后可按 Ctrl+Enter 提交评论.</span>
