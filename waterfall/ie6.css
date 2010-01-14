@@ -4,7 +4,7 @@
 #anti_ie6 { text-align:center; background:yellow; line-height:20px; font-size:14px; margin:5px 0 0 0; height:20px; filter:alpha(opacity=80); }
 #anti_ie6 p strong { padding:0 5px; }
 /*Anti IE6 End*/
-#scroll{position:absolute; z-index:10000;}
+#scroll{position:absolute;}
 #main { padding:0 5px 10px 5px; }
 #respond{ margin-left:10px;}
 .comment_text{ position:relative;}

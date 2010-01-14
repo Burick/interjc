@@ -9,7 +9,7 @@ Author URI: http://interjc.net/
 */
 /*全局设置*/
 * { margin:0; padding:0; outline:none; }
-body { font:12px "Microsoft YaHei", Verdana, Geneva, sans-serif; text-align:center; background: #ECF5FF; color:#313131; text-shadow:0 1px 0 #fff;}
+body { font:12px "Microsoft YaHei", Verdana, Geneva, sans-serif; text-align:center; background: #ECF5FF; color:#313131;}
 a { color:#003E7B; text-decoration:none; }
 a:hover { text-decoration:underline; }
 h1 { font-size:24px; }
@@ -28,7 +28,7 @@ q, blockquote { padding:0 5px 0 10px; margin:10px 0 10px 20px; border-left:3px s
 #header_title a:hover { text-decoration:none; color:#313131; }
 /*页首结束*/
 /*导航栏*/
-#nav {position:fixed; top:0; left:0; width:100%; clear:both; z-index:99; }
+#nav {position:fixed; top:0; left:0; width:100%; clear:both; z-index:99;}
 #nav .inner{text-align:center; background:url(img/bg.png) repeat-y; padding:5px 50px 8px 50px; height:27px; width:860px; margin:0 auto; position:relative;}
 #nav ul { list-style:none; line-height:27px; text-align:center; }
 #nav li { position:relative; }
@@ -36,7 +36,7 @@ q, blockquote { padding:0 5px 0 10px; margin:10px 0 10px 20px; border-left:3px s
 #nav ul li a { color: #313131; text-decoration:none; font-size:14px; /*font-weight:bold;*/
 	line-height:27px; }
 #nav ul li.current_page_item { background: #A4C9E2; }
-#nav ul li.current_page_item a { color:#FFF; font-weight:bold; }
+#nav ul li.current_page_item a { color:#FFF; font-weight:bold;}
 /*导航栏结束*/
 /*多级导航栏*/
 #nav ul li ul { display:none; text-align:left; }
@@ -57,7 +57,7 @@ q, blockquote { padding:0 5px 0 10px; margin:10px 0 10px 20px; border-left:3px s
 #nav_buttons a#nav_comment{ background:url(img/nav-comment.jpg) no-repeat right top; height:29px; width:26px; margin-top:5px;}
 /*导航栏按钮结束*/
 /*正文*/
-#main { padding:10px 5px; }
+#main { padding:10px 5px; text-shadow:0 1px 0 #fff;}
 #content{ clear:both; height:1%;overflow:auto; padding:0 0 10px 0; border-bottom:1px solid #ccc; }
 #content{overflow-x:hidden;}
 .story { padding:10px 0; }
@@ -135,7 +135,7 @@ ol.pinglist li{ line-height:24px;}
 /*评论结束*/
 /*Widgets*/
 #sidebar { padding:20px 0 10px 0; border-top:1px solid #fff; overflow:auto; height:1%; line-height:18px; }
-.sidebar { width:260px; padding:0 0 0 20px; float:left; background:url(img/sidebar-bg.png) repeat-y left; }
+.sidebar { width:260px; padding:0 0 0 20px; float:left; background:url(img/sidebar-bg2.png) repeat-y left; }
 .sidebar h2 { line-height:24px; padding-bottom:5px; }
 .sidebar ul { list-style:none; }
 .sidebar li.widget { padding-bottom:15px; }
@@ -144,7 +144,7 @@ ol.pinglist li{ line-height:24px;}
 #sidebar-3 { }
 /*Widgets End*/
 /*页尾*/
-#footer { border-top:1px solid #ccc; color:#003E7B; text-align:center; }
+#footer { border-top:1px solid #ccc; color:#003E7B; text-align:center; text-shadow:0 1px 0 #fff;}
 #footer p {border-top:1px solid #fff; height:50px; line-height:50px; }
 #footer p a { padding:0 3px; }
 /*页尾结束*/
@@ -174,6 +174,7 @@ html>body #searchform #searchsubmit,html>body #searchform #searchreset{top:2px;}
 /*Better Blogroll End*/
 /*widget_bb_blc_latestcomments*/
 li.widget_bb_blc_latestcomments ul li small a { font-size:11px; }
+li.blclastcommentedposts li.alternate small a { font-size:11px; }
 /*widget_bb_blc_latestcomments End*/
 /*Zelig Show Plugin*/
 .plugins-list{line-height:20px;}
@@ -187,7 +188,7 @@ li.widget_bb_blc_latestcomments ul li small a { font-size:11px; }
 .plug-row{background:#d7fafa;}
 /*Zelig Show Plugin End*/
 /*回到页首*/
-#scroll{clear:both; width:32px; height:76px; position:fixed; left:50%; bottom:10%; margin:0 0 0 485px;}
+#scroll{clear:both; width:32px; height:76px; position:fixed; left:50%; bottom:80px; margin:0 0 0 430px; z-index:99;}
 #scroll a{ background:url(img/scroll.jpg) no-repeat; float:left; display:inline; text-indent:-10000px; width:32px; height:38px;}
 #scroll a.back-to-top{ background-position:left top;}
 #scroll a.back-to-top:hover{ background-position:right top;}
