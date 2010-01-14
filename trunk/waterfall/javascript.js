@@ -167,6 +167,13 @@ jQuery(function($){
   // $('.plugins-list tbody tr td:eq(1)').addClass('td-2');
   // $('.plugins-list tbody tr td:eq(2)').addClass('td-3');
   //返回页首
+  $('#scroll a').fadeTo(0,0.4).hover(
+    function(){
+      $(this).fadeTo(300,1);
+    },
+    function(){
+      $(this).fadeTo(500,0.4);
+    });
   $('a.back-to-top').click(function(){
     $('html, body').animate(
       {scrollTop: 0},
@@ -184,7 +191,8 @@ jQuery(function($){
   $('#loading').click(function(){
     $(this).fadeOut();
   });
-  $('#loading-one').empty().append('页面载入完毕.').parent().fadeOut();
+  $('#loading-one').empty().append('页面载入完毕.').parent().fadeOut(800);
+  //留言板
   if(getCookie('goGbook')==1 && $('li.page-item-6').hasClass('current_page_item')){
     $('html, body').animate({scrollTop: 0},2000).scrollTo($('#respond'), 1200,{easing: 'easeInOutSine', offset:-50, onAfter: function(){setCookie('goGbook',0);}}); 
   }
