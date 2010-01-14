@@ -128,15 +128,10 @@ jQuery(function($){
   });
   //评论 Ctrl+Enter
   $('#commentform input,#commentform textarea').keydown(function(e){
-    commentCtrlEnter(e);
-  });
-  function commentCtrlEnter(evt){
-    evt = (evt) ? evt : ((window.event) ? window.event : "") //兼容IE和Firefox获得keyBoardEvent对象
-    var key = evt.keyCode?evt.keyCode:evt.which; //兼容IE和Firefox获得keyBoardEvent对象的键值
-    if(evt.ctrlKey && (key == 13 || key == 10)){ //同时按下了Ctrl和回车键
+    if(e.ctrlKey && (e.keyCode==13 || e.keyCode==10)){
       $('#commentform :submit').click();
     }
-  }
+  });
   //侧边栏样式
 	$('.pagenav,.linkcat').addClass('widget');    
 	//自定义链接样式
@@ -185,13 +180,11 @@ jQuery(function($){
     $('html, body').scrollTo( '#sidebar', 1200, {easing:'easeInOutSine'} );
     return false;
   });
-});
-//载入中 Loding..
-jQuery(function($){
+  //载入中 Loding..
   $('#loading').click(function(){
     $(this).fadeOut();
   });
-  $('#loading-one').empty().append('页面载入完毕.').parent().fadeOut('slow');
+  $('#loading-one').empty().append('页面载入完毕.').parent().fadeOut();
   if(getCookie('goGbook')==1 && $('li.page-item-6').hasClass('current_page_item')){
     $('html, body').animate({scrollTop: 0},2000).scrollTo($('#respond'), 1200,{easing: 'easeInOutSine', offset:-50, onAfter: function(){setCookie('goGbook',0);}}); 
   }
