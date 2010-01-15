@@ -8,7 +8,7 @@
 <meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
 <meta name="generator" content="WordPress <?php bloginfo('version'); ?>" />
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
-<script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/lib/jquery-1.3.2.min.js"></script>
+<script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/lib/jquery-1.4.min.js"></script>
 <script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/lib/jquery.plugins.js"></script>
 <script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/javascript.js"></script>
 <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
