@@ -1,0 +1,5 @@
+#container div.line-x{ overflow:hidden;}
+/*Anti IE6*/
+#anti_ie6 { text-align:center; background:yellow; line-height:20px; font-size:14px; margin:5px 0 0 0; height:20px; filter:alpha(opacity=80); }
+#anti_ie6 p strong { padding:0 5px; }
+#scroll{display:none;}
