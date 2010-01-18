@@ -37,12 +37,13 @@ blockquote { padding:0 5px 0 10px; margin:10px 0 10px 20px; border-left:3px soli
 /*wrap*/
 #wrap { width:960px; margin:0 auto; text-align:left; position: relative; }
 /*header*/
-#header { clear:both; height:100px; }
+#header { clear:both; color:#666; height:100px; }
 #header div.title { float:left; display:inline; margin:0 0 0 30px; }
 #header div.title div { float:left; display:inline; }
 #header div.title div.logo { background:url(img/logo.png) no-repeat; height:60px; width:80px; margin:25px 0 0 0; }
 #header div.title div.logo a { display:block; width:80px; height:60px; text-indent:-10000px; }
 #header div.title div.text { margin:25px 0 0 10px; }
+#header div.advertisement { background:#97bab6 url(ad/8.jpg) no-repeat left top; ; border:1px solid #666; display:inline; float:right; height:60px; width:468px; margin:25px 35px 0 0; }
 /*container*/
 #container { background:#ebebeb url(img/container-bg.png) repeat-y left; color:#333; }
 #container .in { background:url(img/container-bottom.png) no-repeat left bottom; }
@@ -67,7 +68,11 @@ blockquote { padding:0 5px 0 10px; margin:10px 0 10px 20px; border-left:3px soli
 .meta p { margin:0 0 5px 0; }
 img.avatar { border:1px solid #ccc; padding:1px; }
 .entry { float:left; width:500px; display:inline; }
+.entry-text{ margin:0 0 10px 0;}
+.entry-text img, .entry-text a img { background:#fff; border:1px solid #ccc; padding:3px; margin:3px; }
+.entry p.page_nav { padding:0 0 10px 0; text-align:right; }
 p.postmetadata { clear:both; margin:10px 0 0 0; text-align:right; }
+.entry-copyright, #SRBacks { background:url(img/line-y.gif) repeat-y left; padding:0 0 0 8px; margin:0 0 0 7px; }
 /*导航开始*/
 .navigation { margin:10px 0 0 0; padding:0 10px; line-height:24px; height:28px; clear:both; overflow:hidden; }
 .navigation .nav_prev { float:left; }
@@ -75,15 +80,36 @@ p.postmetadata { clear:both; margin:10px 0 0 0; text-align:right; }
 .navigation .pagebar { padding: 0.2em 0.5em; margin-right: 0.1em; margin-bottom: 1.0em; /*border: 1px solid #fff;background: #fff;*/ text-decoration: none; text-align: center; }
 .navigation .pagebar a, .navigation .pageList .this-page { border: 1px solid #9AAFE5; text-decoration: none; padding: 0.2em 0.5em; }
 .navigation .pagebar a:visited { border: 1px solid #9AAFE5; text-decoration: none; padding: 0.2em 0.5em; }
-.navigation .pagebar .break { padding: 2px 6px 2px 6px; border: none; /*background: #fff;*/
-	text-decoration: none; }
+.navigation .pagebar .break { padding: 2px 6px 2px 6px; border: none; /*background: #fff;*/ text-decoration: none; }
 .navigation .pagebar .this-page { border: 1px solid #2E6AB1; padding: 0.2em 0.5em; font-weight: bold; background: #2E6AB1; color: #fff; }
 .navigation .pagebar a:hover { border-color: #2E6AB1; }
 .navigation .pagebar .inactive { border: 1px solid #cccccc; color: #ccc; text-decoration: none; padding: 0.2em 0.5em; }
 /*Global Sidebars*/
-.sidebar ul { list-style:none; }
+.sidebar ul { list-style:none; line-height:1.8; }
 .widget { clear:both; margin:0 0 10px 0; }
 .widget ul ul { margin:0 0 0 8px; padding:0 0 0 7px; border-left:1px dotted #ccc; }
+.linkcat h2 { background:url(img/icon-group.png) no-repeat left center; padding-left:20px; }
+.linkcat ul { clear:both; overflow:auto; height:1%; }
+.linkcat ul li { float:left; display:inline; width:50%; }
+.linkcat ul li a { background:url(img/icon-link.png) no-repeat left center; padding-left:20px; }
+.widget_meta h2 { background:url(img/icon-config.png) no-repeat left center; padding-left:20px; }
+.widget_meta li a { background:url(img/icon-con.png) no-repeat left center; padding-left:20px; }
+.widget_archive h2 { background:url(img/icon-chart.png) no-repeat left center; padding-left:20px; }
+.widget_archive li { background:url(img/icon-day.png) no-repeat left center; padding-left:20px; }
+.pagenav h2 { background:url(img/icon-page.png) no-repeat left center; padding-left:20px; }
+.widget_tag_cloud h2 { background:url(img/icon-tag-blue.png) no-repeat left center; padding-left:20px; }
+.widget_recent_entries h2 { background:url(img/icon-new.png) no-repeat left center; padding-left:20px; }
+.widget_recent_entries li { background:url(img/icon-tag-orange.png) no-repeat left center; padding-left:20px; }
+.widget_recent_comments h2 { background:url(img/icon-comments.png) no-repeat left center; padding-left:20px; }
+.widget_recent_comments li { background:url(img/icon-comment.png) no-repeat left center; padding-left:20px; }
+/*Plugin Widgets*/
+.widget_bb_blc_latestcomments ul li small a { font-size:11px; }
+.widget_blc_latest_comments h2 { background:url(img/icon-comments.png) no-repeat left center; padding-left:20px; }
+.blclastcommentedposts li.alternate a { font-weight:bold; }
+.blclastcommentedposts li.alternate small a { font-size:11px; font-weight:normal; }
+.widget_interjccategoryposts h2 { background:url(img/icon-rainbow.png) no-repeat left center; padding-left:20px; }
+.widget_interjccategoryposts a.post-title { background:url(img/icon-tag-yellow.png) no-repeat left center; font-weight:bold; font-size:12px; padding-left:20px; }
+.widget_interjccategoryposts li.cat-post-item p { margin:0 0 5px 0; }
 /*Sidebar*/
 #sidebar { width:250px; display:inline; float:left; margin:0 0 0 15px; }
 /*Footbar*/
@@ -92,10 +118,9 @@ p.postmetadata { clear:both; margin:10px 0 0 0; text-align:right; }
 #sidebar-3, #sidebar-4 { background:url(img/line-y.gif) repeat-y left; }
 #sidebar-3 { width:285px; }
 /*comments*/
-.comments-templates { }
-.comments-template { }
+#comments { font-size:16px; line-height:38px; }
 ol.commentlist, ol.commentlist ul { list-style:none; }
-.comment { background:url(img/line-y.gif) repeat-y left; padding:0 0 0 15px; margin:5px 0 5px 15px; position:relative;}
+.comment { background:url(img/line-y.gif) repeat-y left; padding:0 0 0 15px; margin:5px 0 5px 15px; position:relative; }
 .depth-1 { background:none; padding-left:0; margin:0 0 10px 0; }
 .comment-author { clear:both; overflow:auto; height:1%; }
 .comment-author img.avatar { float:left; display:inline; margin:0 5px 0 0; }
@@ -103,27 +128,27 @@ ol.commentlist, ol.commentlist ul { list-style:none; }
 .comment-meta .commentmetadata { display:block; }
 /*WP-Spread-Comment*/
 .editComment, .editableComment, .textComment { display: inline; }
-.comment-childs { border: 1px solid #ccc; border-width:0 0 0 3px; margin: 8px 0 2px 10px; padding: 4px 0 2px 10px; position:relative;}
-.comment-childs img.avatar{ float:left; margin:0 5px 0 0; display:inline;}
-.comment-childs-meta{ float:left; display:inline; padding:3px 0 0 0; line-height:16px;}
-.comment-childs .clear{ margin:0 0 5px 0;}
-.thdrpy{clear:both; position:absolute; top:5px; left:180px;}
-.thdrpy a{background:url(img/reply.png) no-repeat left top; color:#ccc; display:inline; float:left; height:15px; width:15px; margin-top:2px; text-indent:-10000px;}
-.thdrpy a:hover{background-position:-15px top; color:#000; text-decoration:none;}
-.depth-1 .thdrpy{top:0;}
-.chalt { /* background-color: #E2E2E2; */}
+.comment-childs { border: 1px solid #ccc; border-width:0 0 0 3px; margin: 8px 0 2px 10px; padding: 4px 0 2px 10px; position:relative; }
+.comment-childs img.avatar { float:left; margin:0 5px 0 0; display:inline; }
+.comment-childs-meta { float:left; display:inline; padding:3px 0 0 0; line-height:16px; }
+.comment-childs .clear { margin:0 0 5px 0; }
+.thdrpy { clear:both; position:absolute; top:5px; left:180px; }
+.thdrpy a { background:url(img/reply.png) no-repeat left top; color:#ccc; display:inline; float:left; height:15px; width:15px; margin-top:2px; text-indent:-10000px; }
+.thdrpy a:hover { background-position:-15px top; color:#000; text-decoration:none; }
+.depth-1 .thdrpy { top:0; }
+.chalt { /* background-color: #E2E2E2; */ }
 #newcomment { border:1px dashed #777; width:90%; }
 #newcommentsubmit { color:red; }
 .adminreplycomment { border:1px dashed #777; width:99%; margin:4px; padding:4px; }
 .mvccls { color: #999; }
 /*Trackback Pingback*/
-.pingslist { clear:both; height:1%; overflow:auto; padding:0 10px; margin:10px 0; border-left:3px solid red;list-style:none; }
+.pingslist { clear:both; height:1%; overflow:auto; padding:0 10px; margin:10px 0; border-left:3px solid red; list-style:none; }
 .pingslist li { line-height:24px; }
 /*Respond*/
 .welcome-back { display:none; }
-#commentform{position:relative;}
-#cancel_reply{position:absolute; top:5px; left:400px;}
-#cancel_reply a{ background:url(img/cancel.gif) no-repeat left top; display:block; height:16px; width:16px; text-indent:-10000px;}
+#commentform { position:relative; }
+#cancel_reply { position:absolute; top:5px; left:400px; }
+#cancel_reply a { background:url(img/cancel.gif) no-repeat left top; display:block; height:16px; width:16px; text-indent:-10000px; }
 #commentform p { padding:5px 0; }
 #commentform p label { padding-left:5px; }
 input.comment_submit { border:1px solid #ccc; border-right:3px solid #002346; padding:3px 10px; font-size:14px; line-height:14px; background:#fff; }
@@ -134,8 +159,8 @@ span.comment_submit { color:#666; font-size:11px; padding-left:10px; }
 #footer a { padding:0 5px; }
 /*页尾结束*/
 /*Scroll*/
-#scroll { clear:both; width:32px; height:76px; position:fixed; left:50%; bottom:80px; margin:0 0 0 410px; z-index:99; }
-#scroll a { background:url(img/scroll.jpg) no-repeat; float:left; display:inline; text-indent:-10000px; width:32px; height:38px; }
+#scroll { clear:both; width:32px; height:76px; position:fixed; left:50%; bottom:30px; margin:0 0 0 460px; z-index:99; }
+#scroll a { background:url(img/scroll.png) no-repeat; float:left; display:inline; text-indent:-10000px; width:32px; height:38px; }
 #scroll a.back-to-top { background-position:left top; }
 #scroll a.back-to-top:hover { background-position:right top; }
 #scroll a.back-to-bottom { background-position:left bottom; }
@@ -159,10 +184,6 @@ html>body #searchform #searchsubmit, html>body #searchform #searchreset { top:2p
 #searchform #searchreset { display:none; background-position:right top; right:2px; }
 #searchform #searchreset:hover { background-position:right bottom; }
 /*Searchform End*/
-/*widget_bb_blc_latestcomments*/
-li.widget_bb_blc_latestcomments ul li small a { font-size:11px; }
-li.blclastcommentedposts li.alternate small a { font-size:11px; }
-/*widget_bb_blc_latestcomments End*/
 /*Zelig Show Plugin*/
 .plugins-list { line-height:20px; }
 .plugins-list table { margin-bottom:10px; padding-bottom:10px; border-bottom:1px dotted #ccc; }
@@ -172,7 +193,7 @@ li.blclastcommentedposts li.alternate small a { font-size:11px; }
 .plugins-list .td-2 { width:10%; text-align:center; }
 .plugins-list .td-3 { width:75%; }
 .alternate-plug-row { }
-.plug-row { background:#d7fafa; }
+.plug-row { background:#ccc; }
 /*Zelig Show Plugin End*/
 /*其他*/
 .alignright { display:inline; float:right; margin-left:5px; }

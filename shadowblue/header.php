@@ -52,5 +52,8 @@
       <!--.text-->
     </div>
     <!--.title-->
+    <div class="advertisement">
+    <?php include (TEMPLATEPATH . '/ad/ad_468_60.txt'); ?>
+    </div>
   </div>
   <!--/header-->
