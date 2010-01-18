@@ -163,9 +163,6 @@ jQuery(function($){
     $(this).children('td:eq(1)').addClass('td-2');
     $(this).children('td:eq(2)').addClass('td-3');
   });
-  // $('.plugins-list tbody tr td:eq(0)').addClass('td-1');
-  // $('.plugins-list tbody tr td:eq(1)').addClass('td-2');
-  // $('.plugins-list tbody tr td:eq(2)').addClass('td-3');
   //返回页首
   $('#scroll a').fadeTo(0,0.4).hover(
     function(){
@@ -187,6 +184,11 @@ jQuery(function($){
     $('html, body').scrollTo( '#sidebar', 1200, {easing:'easeInOutSine'} );
     return false;
   });
+  //Hash
+  if(window.location.hash){
+    var locationHash = window.location.hash;
+    $('html, body').scrollTo( locationHash, 300, {easing:'easeInOutSine', offset: -50} ); 
+  }   
   //载入中 Loding..
   $('#loading').click(function(){
     $(this).fadeOut();
