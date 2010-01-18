@@ -94,7 +94,10 @@ p.postmetadata { clear:both; margin:10px 0 0 0; text-align:right; }
 /*Global Sidebars*/
 .sidebar ul { list-style:none; line-height:1.8; }
 .widget { clear:both; margin:0 0 10px 0; }
+.widget h2 { background:url(img/icon-default.png) no-repeat left center; padding-left:20px; }
 .widget ul ul { margin:0 0 0 8px; padding:0 0 0 7px; border-left:1px dotted #ccc; }
+.widget_rss h2{ background:none; padding:0;}
+.widget_rss li{ background:url(img/icon-news.png) no-repeat left center; padding-left:20px; }
 .linkcat h2, .widget_links h2 { background:url(img/icon-group.png) no-repeat left center; padding-left:20px; }
 .linkcat ul, .widget_links ul { clear:both; overflow:auto; height:1%; }
 .linkcat ul li, .widget_links ul li{ float:left; display:inline; width:50%; }
