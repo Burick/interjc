@@ -11,6 +11,12 @@ if($.browser.msie){
 }else{
   var ieVer = 100;
 }
+//top-sns
+$('#top-sns a').fadeTo(0,0.5).hover(function(){
+  $(this).fadeTo(300,1);
+},function(){
+  $(this).fadeTo(300,0.5);
+});
 //.story
 $('.story:last').addClass('last-story');
 //.entry-text

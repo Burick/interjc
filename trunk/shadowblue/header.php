@@ -32,7 +32,16 @@
         <li class="page_item <?php if(is_home()){echo 'current_page_item';}?>"><a href="<?php bloginfo('url');?>">首页</a></li>
         <?php wp_list_pages('depth=&title_li=');?>
       </ul>
-    </div>
+    </div><!--/top-page-->
+    <div id="top-sns">
+    <ul>
+    <li><a href="<?php bloginfo('rss2_url');?>" class="feed" title="订阅本站">Feed</a></li>
+    <li><a href="mailto:<?php bloginfo('admin_email');?>" class="email" title="邮箱">Email</a></li>
+    <li><a href="http://www.facebook.com/interjc" class="facebook" title="Facebook" rel="external">Facebook</a></li>
+    <li><a href="http://twitter.com/interjc" class="twitter" title="Follow me via Twitter" rel="external">Twitter</a></li>
+
+    </ul>
+    </div><!--/top-sns-->
   </div>
   <!--/.in-->
 </div>

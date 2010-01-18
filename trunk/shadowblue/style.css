@@ -27,13 +27,20 @@ blockquote { padding:0 5px 0 10px; margin:10px 0 10px 20px; border-left:3px soli
 /*top*/
 #top { background:#666 url(img/top.png) repeat-x top; height:45px; }
 #top .in { clear:both; height:34px; line-height:34px; width:960px; margin:0 auto; }
-#top-page { }
+#top-page { float:left;}
 #top-page ul { display:inline; float:left; list-style:none; margin:0 0 0 30px; }
 #top-page ul a { color:#ebebeb; font-size:12px; }
 #top-page ul a:hover { color:#FFF; text-decoration:none; }
 #top-page .page_item { display:inline; float:left; padding:0 10px }
 #top-page .page_item ul { display:none; }
 #top-page .page_item ul li { float:none; }
+#top-sns{ display:inline; float:right; height:28px; line-height:28px; margin:3px 30px 0 0;}
+#top-sns ul{ list-style:none;}
+#top-sns ul li{ display:inline; float:right;}
+#top-sns ul li a{ background:url(img/icons-sns.png) no-repeat left top; display:inline; float:right; height:28px; width:28px; margin:0 0 0 5px; text-indent:-10000px;}
+#top-sns ul li a.email{ background-position:-28px top;}
+#top-sns ul li a.facebook{ background-position:-84px top;}
+#top-sns ul li a.twitter{ background-position:-56px top;}
 /*wrap*/
 #wrap { width:960px; margin:0 auto; text-align:left; position: relative; }
 /*header*/
