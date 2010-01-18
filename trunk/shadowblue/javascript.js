@@ -13,6 +13,36 @@ if($.browser.msie){
 }
 //.story
 $('.story:last').addClass('last-story');
+//.entry-text
+$('.entry-text img').hover(function(){
+    $(this).doTimeout('hoverIMG',500,function(){
+      $(this).animate(
+        {
+        borderTopColor: '#003E7B',
+        borderRightColor: '#003E7B',
+        borderBottomColor: '#003E7B',
+        borderLeftColor: '#003E7B'   
+        },
+        {
+        duration: 400
+        }
+      ); 
+    });
+  }, function(){
+    $(this).doTimeout('hoverIMG',500,function(){
+      $(this).animate(
+        {
+        borderTopColor: '#ccc',
+        borderRightColor: '#ccc',
+        borderBottomColor: '#ccc',
+        borderLeftColor: '#ccc'   
+        },
+        {
+        duration: 800
+        }
+      ); 
+    });
+  });
 //.widget
 $('.sidebar>ul>li').addClass('widget');
 //评论 Ctrl+Enter
@@ -56,12 +86,12 @@ $('#searchform :text').blur(function(){
   }
 });
 //返回页首
-$('#scroll a').fadeTo(0,0.2).hover(
+$('#scroll a').fadeTo(0,0.3).hover(
   function(){
     $(this).fadeTo(300,0.9);
   },
   function(){
-    $(this).fadeTo(600,0.2);
+    $(this).fadeTo(600,0.3);
 });
 $('a.back-to-top').click(function(){
   $('html, body').animate({scrollTop: 0}, {duration:1200, easing:'easeInOutSine'});
@@ -88,3 +118,5 @@ $('.plugins-list tbody tr').each(function(){
 });
 //End
 });
+//其他Function
+addComment={moveForm:function(d,f,i,c){var m=this,a,h=m.I(d),b=m.I(i),l=m.I("cancel-comment-reply-link"),j=m.I("comment_parent"),k=m.I("comment_post_ID");if(!h||!b||!l||!j){return}m.respondId=i;c=c||false;if(!m.I("wp-temp-form-div")){a=document.createElement("div");a.id="wp-temp-form-div";a.style.display="none";b.parentNode.insertBefore(a,b)}h.parentNode.insertBefore(b,h.nextSibling);if(k&&c){k.value=c}j.value=f;l.style.display="";l.onclick=function(){var n=addComment,e=n.I("wp-temp-form-div"),o=n.I(n.respondId);if(!e||!o){return}n.I("comment_parent").value="0";e.parentNode.insertBefore(o,e);e.parentNode.removeChild(e);this.style.display="none";this.onclick=null;return false};try{m.I("comment").focus()}catch(g){}return false},I:function(a){return document.getElementById(a)}};

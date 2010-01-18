@@ -34,6 +34,13 @@ function interjc_comment($comment, $args, $depth) {
   </div>
 <?php
 }
+/* function theme_queue_js(){
+  if (!is_admin()){
+    if ( is_singular() AND comments_open() AND (get_option('thread_comments') == 1))
+      wp_enqueue_script( 'comment-reply' );
+  }
+}
+add_action('get_header', 'theme_queue_js'); */
 //获取自定义字段
 function get_custom_meta($s){
 	$simg = get_post_meta(get_the_ID(), $s, true);
