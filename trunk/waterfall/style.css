@@ -16,6 +16,7 @@ h1 { font-size:24px; }
 h2 { font-size:18px; }
 h3 { font-size:14px; }
 cite{ font-style: normal; font-weight:bold;}
+small,small a{ font-size:11px;}
 a img,img{ border:none; max-width:90%; height:auto;}
 del { color:#ccc !important; }
 q, blockquote { padding:0 5px 0 10px; margin:10px 0 10px 20px; border-left:3px solid #D7D7D7; }
@@ -70,7 +71,7 @@ q, blockquote { padding:0 5px 0 10px; margin:10px 0 10px 20px; border-left:3px s
 .entry p { padding-bottom:3px; }
 .entry ul, .entry ol, .entry dl { padding:5px 0 5px 25px; }
 .entry .postmetadata { padding-top:5px; text-align:right; }
-.entry .inner a img,.entry .inner img{ border:3px solid #ccc; padding:1px; margin-bottom:5px;}
+.entry .inner a img,.entry .inner img{ background:#fff; border:1px solid #ccc; padding:3px; margin:3px;}
 .entry .inner img.hover{ border-color:#003E7B;}
 .entry_copyright { border-left:3px solid red; padding:5px 10px; margin:10px 0 0 0;}
 #SRBacks { margin:0 0 10px 0; padding:5px 10px; border-left:3px solid red; }
