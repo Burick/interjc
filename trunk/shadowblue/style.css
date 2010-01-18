@@ -95,10 +95,10 @@ p.postmetadata { clear:both; margin:10px 0 0 0; text-align:right; }
 .sidebar ul { list-style:none; line-height:1.8; }
 .widget { clear:both; margin:0 0 10px 0; }
 .widget ul ul { margin:0 0 0 8px; padding:0 0 0 7px; border-left:1px dotted #ccc; }
-.linkcat h2 { background:url(img/icon-group.png) no-repeat left center; padding-left:20px; }
-.linkcat ul { clear:both; overflow:auto; height:1%; }
-.linkcat ul li { float:left; display:inline; width:50%; }
-.linkcat ul li a { background:url(img/icon-link.png) no-repeat left center; padding-left:20px; }
+.linkcat h2, .widget_links h2 { background:url(img/icon-group.png) no-repeat left center; padding-left:20px; }
+.linkcat ul, .widget_links ul { clear:both; overflow:auto; height:1%; }
+.linkcat ul li, .widget_links ul li{ float:left; display:inline; width:50%; }
+.linkcat ul li a, .widget_links ul li a{ background:url(img/icon-link.png) no-repeat left center; padding-left:20px; }
 .widget_meta h2 { background:url(img/icon-config.png) no-repeat left center; padding-left:20px; }
 .widget_meta li a { background:url(img/icon-con.png) no-repeat left center; padding-left:20px; }
 .widget_archive h2 { background:url(img/icon-chart.png) no-repeat left center; padding-left:20px; }
