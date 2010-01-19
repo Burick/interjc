@@ -31,7 +31,7 @@
 <div id="anti_ie6" <?php if($_COOKIE['closeAnti']==true){echo 'class="hidden"';}?>>
 <div class="in">
 <span class="warning">Tips: </span><p>尊敬的用户，您正在使用老掉牙的IE 6.0，我们强烈推荐您升级为<a target="_blank"  href="http://docs.google.com/View?id=dg5phkpq_78cd6t5gf8">符合Web标准的浏览器</a>，更快，更好，更安全！<a href="http://www.microsoft.com/china/windows/internet-explorer/">IE8下载</a></p>
-<a href="#" title="关闭后一周内不在显示" class="close">X</a>
+<a href="#" title="关闭后一周内不再显示" class="close">X</a>
 </div>
 </div>
   <![endif]-->
