@@ -25,7 +25,16 @@
 <?php wp_head(); ?>
 </head>
 <body style="height:100%; width:100%; position:relative;">
+
 <div id="top">
+  <!--[if IE 6]>
+<div id="anti_ie6" <?php if($_COOKIE['closeAnti']==true){echo 'class="hidden"';}?>>
+<div class="in">
+<span class="warning">Tips: </span><p>尊敬的用户，您正在使用老掉牙的IE 6.0，我们强烈推荐您升级为<a target="_blank"  href="http://docs.google.com/View?id=dg5phkpq_78cd6t5gf8">符合Web标准的浏览器</a>，更快，更好，更安全！<a href="http://www.microsoft.com/china/windows/internet-explorer/">IE8下载</a></p>
+<a href="#" title="关闭后一周内不在显示" class="close">X</a>
+</div>
+</div>
+  <![endif]-->
   <div class="in">
     <div id="top-page">
       <ul>
@@ -39,7 +48,6 @@
     <li><a href="mailto:<?php bloginfo('admin_email');?>" class="email" title="邮箱">Email</a></li>
     <li><a href="http://www.facebook.com/interjc" class="facebook" title="Facebook" rel="external">Facebook</a></li>
     <li><a href="http://twitter.com/interjc" class="twitter" title="Follow me via Twitter" rel="external">Twitter</a></li>
-
     </ul>
     </div><!--/top-sns-->
   </div>
@@ -62,7 +70,7 @@
     </div>
     <!--.title-->
     <div class="advertisement">
-    <?php include (TEMPLATEPATH . '/ad/ad_468_60.txt'); ?>
+    <?php include (TEMPLATEPATH . '/ad/ad_468_60.php'); ?>
     </div>
   </div>
   <!--/header-->

@@ -1,6 +1,35 @@
-#container div.line-x{ overflow:hidden;}
 /*Anti IE6*/
-#anti_ie6 { text-align:center; background:yellow; line-height:20px; font-size:14px; margin:5px 0 0 0; height:20px; filter:alpha(opacity=80); }
-#anti_ie6 p strong { padding:0 5px; }
+#anti_ie6 { background:#112435; color:#f08047; height:1%; font-size:12px; line-height:1.8; text-align:left;}
+#anti_ie6 .in{ width:900px; clear:both; padding:0 30px 0 50px; margin:0 auto; position:relative;}
+#anti_ie6 .in a{ color:#b9d8d0; padding:0 3px;}
+#anti_ie6 .in span.warning{ background:url(img/icon/icon-error.gif) no-repeat left top; height:16px; width:16px; text-indent:-10000px; position:absolute; top:8px; left:50px;}
+#anti_ie6 .in p{ margin:0 0 0 20px;}
+#anti_ie6 .in a.close{ background:url(img/icon/icon-close.gif) no-repeat left top; color:red; padding:0; position:absolute; height:16px; width:16px; top:8px; right:50px; text-indent:-10000px;}
+#container .in{ background:none;}
+#container .inner { background:url(img/container-top.png) no-repeat left top; padding:15px 0 0 0;}
+#container div.line-x{ overflow:hidden; margin:0 30px;}
+#nav{ margin:0 30px;}
+#main{ margin:0 15px;}
+#sidebar{ overflow:hidden; margin:0 15px;}
+#footbar{ background:url(img/container-bottom.png) no-repeat left bottom; padding:15px 30px 30px 45px;}
+/*icons*/
+.widget h2 { background-image:url(img/icon/icon-default.gif);}
+.widget_rss li{ background-image:url(img/icon/icon-news.gif);}
+.linkcat h2, .widget_links h2 { background-image:url(img/icon/icon-group.gif);}
+.linkcat ul li a, .widget_links ul li a{ background-image:url(img/icon/icon-link.gif);}
+.widget_meta h2 { background-image:url(img/icon/icon-config.gif);}
+.widget_meta li a { background-image:url(img/icon/icon-con.gif);}
+.widget_archive h2 { background-image:url(img/icon/icon-chart.gif);}
+.widget_archive li { background-image:url(img/icon/icon-day.gif);}
+.pagenav h2 { background-image:url(img/icon/icon-page.gif);}
+.widget_tag_cloud h2 { background-image:url(img/icon/icon-tag-blue.gif);}
+.widget_recent_entries h2 { background-image:url(img/icon/icon-new.gif);}
+.widget_recent_entries li { background-image:url(img/icon/icon-tag-orange.gif);}
+.widget_recent_comments h2 { background-image:url(img/icon/icon-comments.gif);}
+.widget_recent_comments li { background-image:url(img/icon/icon-comment.gif);}
+.widget_blc_latest_comments h2 { background-image:url(img/icon/icon-comments.gif);}
+.widget_interjccategoryposts h2 { background-image:url(img/icon/icon-rainbow.gif);}
+.widget_interjccategoryposts a.post-title { background-image:url(img/icon/icon-tag-yellow.gif);}
+
 #scroll{display:none;}
 #scroll a { background-image:url(img/scroll.jpg);}

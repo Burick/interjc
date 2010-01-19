@@ -12,11 +12,13 @@ if($.browser.msie){
   var ieVer = 100;
 }
 //top-sns
-$('#top-sns a').fadeTo(0,0.5).hover(function(){
-  $(this).fadeTo(300,1);
-},function(){
-  $(this).fadeTo(300,0.5);
-});
+if(ieVer>6){
+  $('#top-sns a').fadeTo(0,0.5).hover(function(){
+    $(this).fadeTo(300,1);
+  },function(){
+    $(this).fadeTo(300,0.5);
+  });
+}
 //.story
 $('.story:last').addClass('last-story');
 //.entry-text
@@ -30,7 +32,7 @@ $('.entry-text img').hover(function(){
         borderLeftColor: '#003E7B'   
         },
         {
-        duration: 400
+        duration: 800
         }
       ); 
     });
@@ -49,6 +51,12 @@ $('.entry-text img').hover(function(){
       ); 
     });
   });
+$('.entry-text a').each(function(){
+  $self = $(this);
+  if(ieVer>7 && !$self.has('img').length && !$self.hasClass('more-link')){
+    $self.addClass('external-link');
+  }
+});
 //.widget
 $('.sidebar>ul>li').addClass('widget');
 //评论 Ctrl+Enter
