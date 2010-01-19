@@ -30,10 +30,15 @@ blockquote { padding:0 5px 0 10px; margin:10px 0 10px 20px; border-left:3px soli
 #top-page { float:left;}
 #top-page ul { display:inline; float:left; list-style:none; margin:0 0 0 30px; }
 #top-page ul a { color:#ebebeb; font-size:12px; }
-#top-page ul a:hover { color:#FFF; text-decoration:none; }
-#top-page .page_item { display:inline; float:left; padding:0 10px }
-#top-page .page_item ul { display:none; }
+#top-page ul a:hover { color:#b9d8d0; text-decoration:none; }
+#top-page .page_item { float:left; padding:0 15px; position:relative;}
+#top-page .page_item ul { background:#666; display:none; width:200px; top:33px; left:-30px; position:absolute; z-index:50; text-align:left;}
 #top-page .page_item ul li { float:none; }
+#top-page .page_item ul li ul{ left:170px; top:0;}
+#top-page li.hover{ background:#112435;}
+#top-page .current_page_item a{ color:#b9d8d0;}
+#top-page .current_page_item a:hover{ color:#b9d8d0;}
+#top-page li.top-level{}
 #top-sns{ display:inline; float:right; height:28px; line-height:28px; margin:3px 30px 0 0;}
 #top-sns ul{ list-style:none;}
 #top-sns ul li{ float:right; display:inline; width:28px; height:28px; margin:0 0 0 5px;}
@@ -78,6 +83,7 @@ img.avatar { border:1px solid #ccc; padding:1px; }
 .entry { float:left; width:500px; display:inline; }
 .entry-text{ margin:0 0 10px 0;}
 .entry-text a.external-link{ background:url(img/external.png) no-repeat right center; padding-right:13px; margin-right:2px;}
+.entry-text a.external-link-old{ background:url(img/external.png) no-repeat center center; padding:0 7px;}
 .entry-text img, .entry-text a img { background:#fff; border:1px solid #ccc; padding:3px; margin:3px; }
 .entry p.page_nav { padding:0 0 10px 0; text-align:right; }
 p.postmetadata { clear:both; margin:10px 0 0 0; text-align:right; }
@@ -155,7 +161,8 @@ ol.commentlist, ol.commentlist ul { list-style:none; }
 .adminreplycomment { border:1px dashed #777; width:99%; margin:4px; padding:4px; }
 .mvccls { color: #999; }
 /*Trackback Pingback*/
-.pingslist { clear:both; height:1%; overflow:auto; padding:0 10px; margin:10px 0; border-left:3px solid red; list-style:none; }
+.pingslist, .pingslist ul{ list-style:none;}
+.pingslist { background:url(img/line-y) repeat-y left; clear:both; height:1%; overflow:auto; padding:0 10px; margin:10px;}
 .pingslist li { line-height:24px; }
 /*Respond*/
 .welcome-back { display:none; }
