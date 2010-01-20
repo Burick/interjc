@@ -11,6 +11,7 @@
 #container .inner { background:url(img/container-top.png) no-repeat left top; padding:15px 0 0 0;}
 #container div.line-x{ overflow:hidden; margin:0 30px;}
 #nav{ margin:0 30px;}
+#nav a.switch,#main a.switch-sidebar{ line-height:0;}
 #main{ margin:0 15px;}
 #comment-template{ padding:0 30px;}
 #sidebar{ overflow:hidden; margin:0 15px;}
@@ -37,3 +38,6 @@
 /*scroll*/
 #scroll{display:none;}
 #scroll a { background-image:url(img/scroll.jpg);}
+/*sidebar-hide*/
+.sidebar-hide #content{ width:885px;}
+.sidebar-hide #content .entry{ width:795px;}

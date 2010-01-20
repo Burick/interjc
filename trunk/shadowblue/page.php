@@ -2,12 +2,7 @@
 <div id="container">
   <div class="in">
     <div class="inner solo">
-      <div id="nav" class="solo">
-        <ul class="top-level">
-          <?php wp_list_categories('title_li='); ?>
-        </ul>
-      </div>
-      <!--/nav-->
+			<?php include (TEMPLATEPATH . '/nav.php'); ?>
       <div class="line-x"></div>
       <!--/.line-x-->
       <div id="main">
@@ -34,6 +29,7 @@
                   <p>
                     <?php the_category('<br />') ?>
                   </p>
+                  <a href="#" class="switch-sidebar"></a>
                 </div>
                 <div class="entry">
                   <h2><a href="<?php the_permalink();?>" title="<?php the_title();?>">
