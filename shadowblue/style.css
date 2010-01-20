@@ -55,6 +55,7 @@ blockquote { padding:0 5px 0 10px; margin:10px 0 10px 20px; border-left:3px soli
 #header div.title div.logo { background:url(img/logo.png) no-repeat; height:60px; width:80px; margin:25px 0 0 0; }
 #header div.title div.logo a { display:block; width:80px; height:60px; text-indent:-10000px; }
 #header div.title div.text { margin:25px 0 0 10px; }
+#header div.title div.text a:hover { color:#226888; text-decoration:none;}
 #header div.advertisement{ display:inline; float:right; height:62px; width:470px; margin:25px 35px 0 0; }
 #header div.advertisement .ad-in{ background:#97bab6 url(ad/8.jpg) no-repeat left top; display:block; height:60px; width:468px; border:1px solid #666;}
 /*container*/
@@ -63,31 +64,40 @@ blockquote { padding:0 5px 0 10px; margin:10px 0 10px 20px; border-left:3px soli
 #container .inner { background:url(img/container-top.png) no-repeat left top; padding:15px 30px; }
 #container .line-x { background:#000 url(img/line-x.gif) repeat-x top; clear:both; height:2px; }
 /*分类导航*/
-#nav { height:30px; line-height:30px; overflow:hidden; }
-#nav ul.top-level { list-style:none; float:left; display:inline; margin:0 15px; }
+#nav { height:30px; line-height:30px; overflow:hidden; position:relative;}
+#nav a.switch{ background:url(img/icons-switch.png) no-repeat left bottom; display:none; position:absolute; height:16px; width:16px; bottom:7px; right:15px; text-indent:-10000px;}
+#nav a.switch:hover{ background-position:right bottom;}
+#nav a.switch-up{ background-position:left top;}
+#nav a.switch-up:hover{ background-position:right top;}
+#nav ul.top-level { list-style:none; float:left; display:inline; margin:0 30px 0 15px; }
 #nav ul.top-level li { float:left; display:inline; margin:0 5px; }
 /*子菜单*/
 #nav ul.top-level ul { display:none; }
 #nav ul.top-level li ul li { float:none; }
 /*main*/
 #main .main-in { background:url(img/line-y.gif) repeat-y 605px; margin:15px; }
+#main .main-in-wide { background:none;}
 /*Content*/
 #content { width:590px; display:inline; float:left; margin:0 15px 0 0; }
-.story { background:url(img/line-x.gif) repeat-x bottom; margin:0 0 15px 0; padding:0 0 15px 0; }
+.story { background:url(img/line-x.gif) repeat-x bottom; margin:0 0 15px 0; padding:0 0 15px 0; position:relative;}
 .last-story { background:none; }
 .only-story { background:url(img/line-x.gif) repeat-x bottom; }
-.story h2 { }
 .meta { display:inline; float:left; margin:3px 15px 0 0; text-align:right; width:75px; }
 .meta p { margin:0 0 5px 0; }
 img.avatar { border:1px solid #ccc; padding:1px; }
-.entry { float:left; width:500px; display:inline; }
+.entry { float:left; width:500px; display:inline;}
+.entry h2{ padding-right:30px;}
 .entry-text{ margin:0 0 10px 0;}
 .entry-text a.external-link{ background:url(img/external.png) no-repeat right center; padding-right:13px; margin-right:2px;}
 .entry-text a.external-link-old{ background:url(img/external.png) no-repeat center center; padding:0 7px;}
-.entry-text img, .entry-text a img { background:#fff; border:1px solid #ccc; padding:3px; margin:3px; }
-.entry p.page_nav { padding:0 0 10px 0; text-align:right; }
+.entry-text img, .entry-text a img { background:#fff; border:1px solid #ccc; padding:3px; margin:3px;}
+.entry p.page_nav { padding:0 0 10px 0; text-align:right;}
 p.postmetadata { clear:both; margin:10px 0 0 0; text-align:right; }
-.entry-copyright, #SRBacks { background:url(img/line-y.gif) repeat-y left; padding:0 0 0 8px; margin:0 0 0 7px; }
+.entry-copyright, #SRBacks { background:url(img/line-y.gif) repeat-y left; padding:0 0 0 8px; margin:0 0 0 7px;}
+/*伸缩侧边栏*/
+a.switch-sidebar{ background:url(img/icons-switch-s.png) no-repeat left top; position:absolute; right:5px; top:5px; height:16px; width:16px;}
+a.switch-sidebar-back{ background-position:left bottom;}
+/* a.switch-sidebar:hover{ background-position:right top;} */
 /*导航开始*/
 .navigation { margin:10px 0 0 0; padding:0 10px; line-height:24px; height:28px; clear:both; overflow:hidden; }
 .navigation .nav_prev { float:left; }
@@ -224,3 +234,9 @@ html>body #searchform #searchsubmit, html>body #searchform #searchreset { top:2p
 .solo { clear:both; height:1%; overflow:hidden; }
 .textcenter { text-align:center; }
 .textshadow { text-shadow:0 1px 1px #fff; }
+/*sidebar-hide*/
+.sidebar-hide #main .main-in{ background:none;}
+.sidebar-hide #content{ width:855px;}
+.sidebar-hide #content .entry{ width:765px;}
+.sidebar-hide a.switch-sidebar{ background-position:left bottom;}
+.sidebar-hide #sidebar{ display:none;}
