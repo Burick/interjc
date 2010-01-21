@@ -4,7 +4,7 @@
         <li id="search" class="widget">
             <?php include(TEMPLATEPATH . '/searchform.php'); ?>
         </li>
-        <li class="widget">
+        <li class="widget widget_archive">
             <h2>存档</h2>
             <ul>
                 <?php wp_get_archives('type=monthly');?>
