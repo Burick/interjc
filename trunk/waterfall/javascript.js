@@ -1,3 +1,4 @@
+jQuery.noConflict();
 jQuery(function($){	
 	//外部链接 rel="external"
 	$('a[rel="external"],a.url').click(function(){
@@ -185,10 +186,10 @@ jQuery(function($){
     return false;
   });
   //Hash
-  if(window.location.hash){
+  if(window.location.hash && $(window.location.hash).length>0){
     var locationHash = window.location.hash;
-    $('html, body').scrollTo( locationHash, 300, {easing:'easeInOutSine', offset: -50} ); 
-  }   
+    $('html, body').scrollTo( locationHash, 300, {easing:'easeInOutSine', offset: -50}); 
+  }
   //载入中 Loding..
   $('#loading').click(function(){
     $(this).fadeOut();
