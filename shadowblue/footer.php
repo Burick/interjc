@@ -3,7 +3,7 @@
 <div id="footer" class="textshadow">
   <p><a style="padding:0;" href="<?php bloginfo('url') ?>/wp-admin/">&copy;</a><a target="_blank" href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.zh">Copyright</a><a href="<?php bloginfo('url') ?>" title="Home">
     <?php bloginfo('name') ?>
-    </a>/<a title="ShadowBlue 主题开发页面" href="http://interjc.net/dev/shadowblue">ShadowBlue</a> . <a title=="sweet icons" href="http://wordpress.org">FAMFAMFAM</a> . <a href="http://wordpress.org">Wordpress</a> . <a class="back-to-top" href="#">Top ↑</a></p>
+    </a>/<a title="ShadowBlue 主题开发页面" href="http://interjc.net/dev/shadowblue">ShadowBlue</a> . <a title=="sweet icons" href="http://famfamfam.com">FAMFAMFAM</a> . <a href="http://wordpress.org">Wordpress</a> . <a class="back-to-top" href="#">Top ↑</a></p>
   <?php wp_footer(); ?>
 </div>
 <!--/footer-->
