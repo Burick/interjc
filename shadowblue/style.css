@@ -172,7 +172,7 @@ ol.commentlist, ol.commentlist ul { list-style:none; }
 .mvccls { color: #999; }
 /*Trackback Pingback*/
 .pingslist, .pingslist ul{ list-style:none;}
-.pingslist { background:url(img/line-y) repeat-y left; clear:both; height:1%; overflow:auto; padding:0 10px; margin:10px;}
+.pingslist { background:url(img/line-y) repeat-y left; clear:both; /* height:1%; overflow:auto; */ padding:0 10px; margin:10px;}
 .pingslist li { line-height:24px; }
 /*Respond*/
 .welcome-back { display:none; }

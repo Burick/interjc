@@ -30,9 +30,10 @@ $('#top-page li.page_item').hover(
   }
 );
 //nav
-if($('#nav ul.top-level').height()>$('#nav').height()){
+if($('#nav>ul:first').height()>$('#nav').height()){
   var navDivHeight = $('#nav').height();
-  var navUlHeight = $('#nav ul.top-level').height();
+  var navUlHeight = $('#nav>ul:first').height();
+  if(navUlHeight>90 && $('#nav>ul:first').hasClass('wp-tag-cloud')){navUlHeight=90}
   $('#nav a.switch').css('display','block').toggle(function(){
     $('#nav').animate({height:navUlHeight},{
       duration: 800,
@@ -53,6 +54,7 @@ if($('#nav ul.top-level').height()>$('#nav').height()){
     return false;
   });
 }
+$('#nav>ul.wp-tag-cloud').addClass('top-level');
 //.story
 $('.story:last').addClass('last-story');
 //.entry-text
