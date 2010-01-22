@@ -6,6 +6,24 @@ if ( function_exists('register_sidebars') )
 		'before_title' => '<h2>',
 		'after_title' => '</h2>',
 	));
+//nav.php内的cats和tags的选择
+function switchCatOrTag($w){
+  switch($w){
+    case 'cat':
+      echo '<ul class="top-level">';
+      wp_list_categories('title_li=');
+      echo '</ul>';
+      break;
+    case 'tag':
+      wp_tag_cloud('format=list&smallest=8&largest=8');
+      break;
+    default:
+      echo '<ul class="top-level">';
+      wp_list_categories('title_li=');
+      echo '</ul>';
+      break;
+  }
+}
 //评论区设置
 function interjc_comment($comment, $args, $depth) {
    $GLOBALS['comment'] = $comment; ?>

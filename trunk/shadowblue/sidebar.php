@@ -16,7 +16,9 @@
         <li>
           <h2>标签</h2>
           <ul>
+            <li>
             <?php wp_tag_cloud('smallest=8&largest=22'); ?>
+            </li>
           </ul>
         </li>
         <li class="widget widget_meta">
