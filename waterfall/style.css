@@ -129,7 +129,7 @@ span.comment_submit { color:#666; font-size:11px; padding-left:10px; }
 .adminreplycomment { border:1px dashed #777; width:99%; margin:4px; padding:4px; }
 .mvccls { color: #999; }
 /*Trackback Pingback*/
-.trackback-pingback{ clear:both; height:1%; overflow:auto;  padding:0 10px; margin:10px 0; border-left:3px solid red;}
+.trackback-pingback{ clear:both; /* height:1%; overflow:auto; */ padding:0 10px; margin:10px 0; border-left:3px solid red;}
 ol.pinglist{list-style:none;}
 ol.pinglist li{ line-height:24px;}
 .welcome-back{display:none;}
