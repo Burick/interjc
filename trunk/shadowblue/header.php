@@ -15,7 +15,7 @@
 <?php wp_get_archives('type=monthly&format=link'); ?>
 <?php //comments_popup_script(); // off by default ?>
 <?php wp_head(); ?>
-<script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/lib/jquery-1.4.min.js"></script>
+<script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/lib/jquery-1.4.1.min.js"></script>
 <script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/lib/jquery.plugins.js"></script>
 <script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/javascript.js"></script>
 <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />

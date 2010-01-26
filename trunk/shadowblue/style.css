@@ -114,6 +114,7 @@ a.switch-sidebar-back{ background-position:left bottom;}
 .widget { clear:both; margin:0 0 10px 0; }
 .widget h2 { background:url(img/icon/icon-default.png) no-repeat left center; padding-left:20px; }
 .widget ul ul { margin:0 0 0 8px; padding:0 0 0 7px; border-left:1px dotted #ccc; }
+.widget input, .widget textarea{ max-width:90%;}
 .widget_rss h2{ background:none; padding:0;}
 .widget_rss li{ background:url(img/icon/icon-news.png) no-repeat left center; padding-left:20px; }
 .linkcat h2, .widget_links h2 { background:url(img/icon/icon-group.png) no-repeat left center; padding-left:20px; }
