@@ -6,8 +6,9 @@ if($.browser.msie){
   switch(ieVer){
     case 7:
       $('#searchreset,#searchsubmit').css({'top':'3px'});
+      break;
     default:
-      //nothing to do
+      break;
   }
 }else{
   var ieVer = 100;
