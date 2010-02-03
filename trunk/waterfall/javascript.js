@@ -158,6 +158,10 @@ jQuery(function($){
   if($.browser.msie && $.browser.version==7){
     $('#searchreset,#searchsubmit').css({'top':'3px'});
   }
+  //Text-Shasow
+  if($.browser.webkit){
+    $('#main,#footer').addClass('shadow');
+  }
   //Zelig-Plugin
   $('.plugins-list tbody tr').each(function(){
     $(this).children('td:eq(0)').addClass('td-1');
