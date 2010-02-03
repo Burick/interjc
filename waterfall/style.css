@@ -58,7 +58,7 @@ q, blockquote { padding:0 5px 0 10px; margin:10px 0 10px 20px; border-left:3px s
 #nav_buttons a#nav_comment{ background:url(img/nav-comment.jpg) no-repeat right top; height:29px; width:26px; margin-top:5px;}
 /*导航栏按钮结束*/
 /*正文*/
-#main { padding:10px 5px; text-shadow:0 1px 0 #fff;}
+#main { padding:10px 5px;}
 #content{ clear:both; height:1%;overflow:auto; padding:0 0 10px 0; border-bottom:1px solid #ccc; }
 #content{overflow-x:hidden;}
 .story { padding:10px 0; }
@@ -145,7 +145,7 @@ ol.pinglist li{ line-height:24px;}
 #sidebar-3 { }
 /*Widgets End*/
 /*页尾*/
-#footer { border-top:1px solid #ccc; color:#003E7B; text-align:center; text-shadow:0 1px 0 #fff;}
+#footer { border-top:1px solid #ccc; color:#003E7B; text-align:center;}
 #footer p {border-top:1px solid #fff; height:50px; line-height:50px; }
 #footer p a { padding:0 3px; }
 /*页尾结束*/
@@ -203,4 +203,5 @@ li.blclastcommentedposts li.alternate small a { font-size:11px; }
 .alignleft { display:inline; float:left; margin-right:5px;}
 .alignright, .alignleft { display:inline; }
 .textcenter { text-align:center; }
+.shadow{ text-shadow:0 1px 0 #fff;}
 .input-border-blue{ border:1px solid #79a8e7;}
