@@ -19,6 +19,7 @@
 /*icons*/
 .widget h2 { background-image:url(img/icon/icon-default.gif);}
 .widget_rss li{ background-image:url(img/icon/icon-news.gif);}
+li.widget_rss h2{ background:none;}
 .linkcat h2, .widget_links h2 { background-image:url(img/icon/icon-group.gif);}
 .linkcat ul li a, .widget_links ul li a{ background-image:url(img/icon/icon-link.gif);}
 .widget_meta h2 { background-image:url(img/icon/icon-config.gif);}
