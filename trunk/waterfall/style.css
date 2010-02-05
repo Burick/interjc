@@ -73,6 +73,7 @@ q, blockquote { padding:0 5px 0 10px; margin:10px 0 10px 20px; border-left:3px s
 .entry .postmetadata { padding-top:5px; text-align:right; }
 .entry .inner a img,.entry .inner img{ background:#fff; border:1px solid #ccc; padding:3px; margin:3px;}
 .entry .inner img.hover{ border-color:#003E7B;}
+.entry .inner p{ padding-bottom:0.7em;}
 .entry_copyright { border-left:3px solid red; padding:5px 10px; margin:10px 0 0 0;}
 #SRBacks { margin:0 0 10px 0; padding:5px 10px; border-left:3px solid red; }
 .entry .postmetadata a, .entry_copyright a, a.more-link, .entry p.page_nav a, .entry a.hasIMG, #SRBacks a { padding:0; background:none; }
@@ -189,7 +190,7 @@ li.blclastcommentedposts li.alternate small a { font-size:11px; }
 .plug-row{background:#d7fafa;}
 /*Zelig Show Plugin End*/
 /*回到页首*/
-#scroll{clear:both; width:32px; height:76px; position:fixed; left:50%; bottom:80px; margin:0 0 0 430px; z-index:99;}
+#scroll{clear:both; width:32px; height:76px; position:fixed; left:50%; bottom:30px; margin:0 0 0 430px; z-index:99;}
 #scroll a{ background:url(img/scroll.jpg) no-repeat; float:left; display:inline; text-indent:-10000px; width:32px; height:38px;}
 #scroll a.back-to-top{ background-position:left top;}
 #scroll a.back-to-top:hover{ background-position:right top;}
@@ -205,3 +206,5 @@ li.blclastcommentedposts li.alternate small a { font-size:11px; }
 .textcenter { text-align:center; }
 .shadow{ text-shadow:0 1px 0 #fff;}
 .input-border-blue{ border:1px solid #79a8e7;}
+/*宽屏*/
+.wide #scroll{ margin:0 0 0 480px;}
