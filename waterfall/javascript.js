@@ -1,11 +1,16 @@
 jQuery.noConflict();
 jQuery(function($){	
+  //宽屏.窄屏
+  if(screen.width>1024){
+    $('body').addClass('wide');
+  }
 	//外部链接 rel="external"
 	$('a[rel="external"],a.url').click(function(){
 		window.open(this.href);
 		return false;
 	});	
 	//多级导航栏
+  $('#nav>div>ul>li:gt(8)').addClass('hidden');
 	$('#nav ul li').hover(
 		function(){
 			$(this).addClass('nav_li_hover');
