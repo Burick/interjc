@@ -108,6 +108,9 @@ $('.entry-text a').each(function(){
   }
 });
 //pingslist
+if($('').children().length==0){ 
+  $('#pings, ol.pingslist').addClass('hidden');
+}
 //评论 Ctrl+Enter
 $('#commentform input,#commentform textarea').keydown(function(e){
   if(e.ctrlKey && (e.keyCode==13 || e.keyCode==10)){
