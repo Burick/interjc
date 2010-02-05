@@ -22,12 +22,21 @@ if(ieVer>6){
   });
 }
 //top-page
+$('#top-page>ul>li:gt(8)').addClass('hidden');
 $('#top-page>ul').addClass('top-level').children('li').addClass('top-level');
 $('#top-page li.page_item').hover(
   function(){
-    $(this).addClass('hover').children('ul').fadeTo(0,0.8).show();
+    var $self = $(this);
+    $self.addClass('hover');
+    $self.doTimeout('hoverNav',500,function(){
+      $self.children('ul').fadeTo(0,0.8).show();    
+    });
   },function(){
-    $(this).removeClass('hover').children('ul').hide();
+    var $self = $(this);
+    $self.removeClass('hover');
+    $self.doTimeout('hoverNav',500,function(){
+      $self.children('ul').hide();    
+    });
   }
 );
 //nav
@@ -98,6 +107,7 @@ $('.entry-text a').each(function(){
     }
   }
 });
+//pingslist
 //评论 Ctrl+Enter
 $('#commentform input,#commentform textarea').keydown(function(e){
   if(e.ctrlKey && (e.keyCode==13 || e.keyCode==10)){
@@ -265,4 +275,4 @@ $('.plugins-list tbody tr').each(function(){
 //End
 });
 //addComment
-addComment={moveForm:function(d,f,i,c){var m=this,a,h=m.I(d),b=m.I(i),l=m.I("cancel-comment-reply-link"),j=m.I("comment_parent"),k=m.I("comment_post_ID");if(!h||!b||!l||!j){return}m.respondId=i;c=c||false;if(!m.I("wp-temp-form-div")){a=document.createElement("div");a.id="wp-temp-form-div";a.style.display="none";b.parentNode.insertBefore(a,b)}h.parentNode.insertBefore(b,h.nextSibling);if(k&&c){k.value=c}j.value=f;l.style.display="";l.onclick=function(){var n=addComment,e=n.I("wp-temp-form-div"),o=n.I(n.respondId);if(!e||!o){return}n.I("comment_parent").value="0";e.parentNode.insertBefore(o,e);e.parentNode.removeChild(e);this.style.display="none";this.onclick=null;return false};try{m.I("comment").focus()}catch(g){}return false},I:function(a){return document.getElementById(a)}};
+//addComment={moveForm:function(d,f,i,c){var m=this,a,h=m.I(d),b=m.I(i),l=m.I("cancel-comment-reply-link"),j=m.I("comment_parent"),k=m.I("comment_post_ID");if(!h||!b||!l||!j){return}m.respondId=i;c=c||false;if(!m.I("wp-temp-form-div")){a=document.createElement("div");a.id="wp-temp-form-div";a.style.display="none";b.parentNode.insertBefore(a,b)}h.parentNode.insertBefore(b,h.nextSibling);if(k&&c){k.value=c}j.value=f;l.style.display="";l.onclick=function(){var n=addComment,e=n.I("wp-temp-form-div"),o=n.I(n.respondId);if(!e||!o){return}n.I("comment_parent").value="0";e.parentNode.insertBefore(o,e);e.parentNode.removeChild(e);this.style.display="none";this.onclick=null;return false};try{m.I("comment").focus()}catch(g){}return false},I:function(a){return document.getElementById(a)}};

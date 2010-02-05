@@ -12,7 +12,7 @@ Author URI: http://interjc.net/
 body { font:12px "Microsoft YaHei", Verdana, Geneva, sans-serif; text-align:center; line-height:1.5; background: #ababab; color:#828282; }
 a { color:#1e5b77; text-decoration:none; }
 a:hover { text-decoration:underline; }
-h1, h2, h3, h4, h5, h6 { color:#303136; text-shadow:0 1px 1px #fff; }
+h1, h2, h3, h4, h5, h6 { color:#303136; line-height:2; text-shadow:0 1px 1px #fff; }
 h1 { font-size:24px; }
 h2 { font-size:18px; }
 h3 { font-size:14px; }
@@ -93,6 +93,7 @@ img.avatar { border:1px solid #ccc; padding:1px; }
 .entry-text img, .entry-text a img { background:#fff; border:1px solid #ccc; padding:3px; margin:3px;}
 .entry-text p{ padding-bottom:1em;}
 .entry p.page_nav { padding:0 0 10px 0; text-align:right;}
+.entry a.more-link{ line-height:2;}
 p.postmetadata { clear:both; margin:10px 0 0 0; text-align:right; }
 .entry-copyright, #SRBacks { background:url(img/line-y.gif) repeat-y left; padding:0 0 0 8px; margin:0 0 0 7px;}
 /*伸缩侧边栏*/
@@ -149,6 +150,7 @@ a.switch-sidebar-back{ background-position:left bottom;}
 #sidebar-3, #sidebar-4 { background:url(img/line-y.gif) repeat-y left; }
 #sidebar-3 { width:285px; }
 /*comments*/
+#comment-template{ padding:0 15px;}
 #comments { font-size:16px; line-height:38px; }
 ol.commentlist, ol.commentlist ul { list-style:none; }
 .comment { background:url(img/line-y.gif) repeat-y left; padding:0 0 0 15px; margin:5px 0 5px 15px; position:relative; }
@@ -174,8 +176,11 @@ ol.commentlist, ol.commentlist ul { list-style:none; }
 .mvccls { color: #999; }
 /*Trackback Pingback*/
 .pingslist, .pingslist ul{ list-style:none;}
-.pingslist { background:url(img/line-y) repeat-y left; clear:both; /* height:1%; overflow:auto; */ padding:0 10px; margin:10px;}
+.pingslist { background:url(img/line-y.gif) repeat-y left; clear:both; /* height:1%; overflow:auto; */ padding:0 10px; margin:10px;}
 .pingslist li { line-height:24px; }
+.pingslist .comment-meta .commentmetadata{ display:inline;}
+.pingslist .comment_text{ padding:0;color:#666;}
+.pingslist .comment_text a{ color:#666;}
 /*Respond*/
 .welcome-back { display:none; }
 #commentform { position:relative; }

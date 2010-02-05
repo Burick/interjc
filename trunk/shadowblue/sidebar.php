@@ -1,9 +1,6 @@
 <div id="sidebar-1" class="sidebar">
     <ul class="top-level">
         <?php if(function_exists('dynamic_sidebar') && dynamic_sidebar(1)):else: ?>
-        <li id="calendar" class="widget widget_calendar">
-          <?php get_calendar(); ?>
-        </li>
         <li id="search" class="widget">
             <?php include(TEMPLATEPATH . '/searchform.php'); ?>
         </li>

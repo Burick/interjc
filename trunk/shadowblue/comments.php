@@ -33,8 +33,9 @@
 <ol class="commentlist">
   <?php wp_list_comments('type=comment&callback=interjc_comment'); ?>
 </ol>
+<h3 id="pings">Pingback / TrackBack</h3>
 <ol class="pingslist">
-  <?php wp_list_comments('type=pings'); ?>
+  <?php wp_list_comments('type=pings&callback=interjc_pinglist'); ?>
 </ol>
 <div class="navigation">
   <div class="alignleft">

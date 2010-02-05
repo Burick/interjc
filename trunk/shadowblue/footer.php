@@ -7,5 +7,5 @@
   <?php wp_footer(); ?>
 </div>
 <!--/footer-->
-<div id="scroll"><a href="#" title="回到页首" class="back-to-top">回到页首</a><a href="#sidebar" title="回到页尾" class="back-to-bottom">回到页尾</a></div>
+<div id="scroll"><a href="#" title="回到页首" class="back-to-top">回到页首</a><a href="#footbar" title="回到页尾" class="back-to-bottom">回到页尾</a></div>
 </body>
