@@ -52,13 +52,35 @@ function interjc_comment($comment, $args, $depth) {
   </div>
 <?php
 }
-/* function theme_queue_js(){
+function interjc_pinglist($comment, $args, $depth) {
+   $GLOBALS['comment'] = $comment; ?>
+<li <?php comment_class(); ?> id="li-comment-<?php comment_ID() ?>">
+  <div id="comment-<?php comment_ID(); ?>">
+    <div class="comment-author vcard">
+      <div class="comment-meta commentmetadata"><strong class="commentmetadata">
+        <?php comment_author_link() ?> @ </strong><span class="commentmetadata"><a href="#comment-<?php comment_ID() ?>" title="">
+        <?php comment_date('Y.m.d') ?>
+        <?php comment_time() ?>
+        </a>
+        <?php edit_comment_link('e','',''); ?>
+        <?php if ($comment->comment_approved == '0') : ?>
+        <em>您的评论正在等待审核.</em>
+        <?php endif; ?>
+        </span></div>
+    </div>
+    <div class="comment_text">    
+      <?php comment_text(); ?>
+    </div>
+  </div>
+<?php
+}
+function theme_queue_js(){
   if (!is_admin()){
     if ( is_singular() AND comments_open() AND (get_option('thread_comments') == 1))
       wp_enqueue_script( 'comment-reply' );
   }
 }
-add_action('get_header', 'theme_queue_js'); */
+add_action('get_header', 'theme_queue_js');
 //获取自定义字段
 function get_custom_meta($s){
 	$simg = get_post_meta(get_the_ID(), $s, true);

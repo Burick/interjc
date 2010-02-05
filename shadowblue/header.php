@@ -38,7 +38,7 @@
     <div id="top-page">
       <ul>
         <li class="page_item <?php if(is_home()){echo 'current_page_item';}?>"><a href="<?php bloginfo('url');?>">首页</a></li>
-        <?php wp_list_pages('depth=&title_li=');?>
+        <?php wp_list_pages('depth=0&title_li=');?>
       </ul>
     </div><!--/top-page-->
     <div id="top-sns">
