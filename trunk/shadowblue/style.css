@@ -57,7 +57,7 @@ blockquote { padding:0 5px 0 10px; margin:10px 0 10px 20px; border-left:3px soli
 #header div.title div.text { margin:25px 0 0 10px; }
 #header div.title div.text a:hover { color:#226888; text-decoration:none;}
 #header div.advertisement{ display:inline; float:right; height:62px; width:470px; margin:25px 35px 0 0; }
-#header div.advertisement .ad-in{ background:#97bab6 url(ad/8.jpg) no-repeat left top; display:block; height:60px; width:468px; border:1px solid #666;}
+#header div.advertisement .ad-in{ background:#97bab6 url(ad/default.jpg) no-repeat left top; display:block; height:60px; width:468px; border:1px solid #666;}
 /*container*/
 #container { background:#ebebeb url(img/container-bg.png) repeat-y left; color:#333; }
 #container .in { background:url(img/container-bottom.png) no-repeat left bottom; }
