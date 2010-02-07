@@ -78,7 +78,7 @@ blockquote { padding:0 5px 0 10px; margin:10px 0 10px 20px; border-left:3px soli
 #main .main-in { background:url(img/line-y.gif) repeat-y 605px; margin:15px; }
 #main .main-in-wide { background:none;}
 /*Content*/
-#content { width:590px; display:inline; float:left; margin:0 15px 0 0; }
+#content { width:590px; display:inline; float:left; margin:0 15px 0 0; overflow:hidden; }
 .story { background:url(img/line-x.gif) repeat-x bottom; margin:0 0 15px 0; padding:0 0 15px 0; position:relative;}
 .last-story { background:none; }
 .only-story { background:url(img/line-x.gif) repeat-x bottom; }
@@ -143,7 +143,7 @@ a.switch-sidebar-back{ background-position:left bottom;}
 .widget_interjccategoryposts a.post-title { background:url(img/icon/icon-tag-yellow.png) no-repeat left center; font-weight:bold; font-size:12px; padding-left:20px; }
 .widget_interjccategoryposts li.cat-post-item p { margin:0 0 5px 0; }
 /*Sidebar*/
-#sidebar { width:250px; display:inline; float:left; margin:0 0 0 15px; }
+#sidebar { width:250px; display:inline; float:left; margin:0 0 0 15px; overflow:hidden;}
 /*Footbar*/
 #footbar { padding:15px 0 15px 15px;}
 .footbar { width:270px; float:left; display:inline; padding:0 0 0 10px; margin:0 0 0 10px; }
