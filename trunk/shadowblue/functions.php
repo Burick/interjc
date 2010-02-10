@@ -24,6 +24,25 @@ function switchCatOrTag($w){
       break;
   }
 }
+//bodyClass
+function bodyClasses(){
+	if($_COOKIE['sidebarHide']==true){
+		$class .= ' sidebar-hide';
+	}
+	if(is_home()){
+		$class .= ' home';
+	}
+	if(is_front_page()){
+		$class .= ' front-page';
+	}
+	if(is_page()){
+		$class .= ' page';
+	}
+	if(is_single()){
+		$class .= ' single';
+	}
+	echo $class;
+}
 //评论区设置
 function interjc_comment($comment, $args, $depth) {
    $GLOBALS['comment'] = $comment; ?>
