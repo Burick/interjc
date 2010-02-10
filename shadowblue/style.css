@@ -145,10 +145,12 @@ a.switch-sidebar-back{ background-position:left bottom;}
 /*Sidebar*/
 #sidebar { width:250px; display:inline; float:left; margin:0 0 0 15px; overflow:hidden;}
 /*Footbar*/
+.footbar-wrap{ position:relative;}
 #footbar { padding:15px 0 15px 15px;}
 .footbar { width:270px; float:left; display:inline; padding:0 0 0 10px; margin:0 0 0 10px; }
 #sidebar-3, #sidebar-4 { background:url(img/line-y.gif) repeat-y left; }
 #sidebar-3 { width:285px; }
+a.switchFootbar{ position:absolute; top:0; left:50%; display:none;}
 /*comments*/
 #comment-template{ padding:0 15px;}
 #comments { font-size:16px; line-height:38px; }

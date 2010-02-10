@@ -1,8 +1,9 @@
 <?php get_header(); ?>
+
 <div id="container">
   <div class="in">
     <div class="inner solo">
-			<?php include (TEMPLATEPATH . '/nav.php'); ?>
+      <?php include (TEMPLATEPATH . '/nav.php'); ?>
       <div class="line-x"></div>
       <!--/.line-x-->
       <div id="main">
@@ -29,8 +30,7 @@
                   <p>
                     <?php the_category('<br />') ?>
                   </p>
-                  <a href="#" class="switch-sidebar"></a>
-                </div>
+                  <a href="#" class="switch-sidebar"></a> </div>
                 <div class="entry">
                   <h2><a href="<?php the_permalink();?>" title="<?php the_title();?>">
                     <?php the_title();?>
@@ -70,14 +70,7 @@
         <!--/.main-in-->
       </div>
       <!--/main-->
-      <div class="line-x"></div>
-      <!--/.line-x-->
-      <div id="footbar" class="solo">
-        <?php get_sidebar(2); ?>
-        <?php get_sidebar(3); ?>
-        <?php get_sidebar(4); ?>
-      </div>
-      <!--/footbar-->
+      <?php include (TEMPLATEPATH . '/footbar.php'); ?>
     </div>
     <!--/.inner-->
   </div>

@@ -25,7 +25,7 @@
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/ie6.css" type="text/css" media="screen" />
 <![endif]-->
 </head>
-<body style="height:100%; width:100%; position:relative;" <?php if($_COOKIE['sidebarHide']==true){echo 'class="sidebar-hide"';}?>>
+<body class="<?php bodyClasses();?>" style="height:100%; width:100%; position:relative;">
 <div id="top">
   <!--[if IE 6]>
 <div id="anti_ie6" <?php if($_COOKIE['closeAnti']==1){echo 'class="hidden"';}?>>
