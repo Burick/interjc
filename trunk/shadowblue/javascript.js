@@ -1,4 +1,3 @@
-$.noConflict();
 jQuery(function($){
 //判断浏览器
 if($.browser.msie){
