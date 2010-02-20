@@ -1,6 +1,6 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head profile="http://gmpg.org/xfn/11" rel="canonical">
+<head profile="http://gmpg.org/xfn/11">
 <title>
 <?php wp_title('|', true, 'right'); ?>
 <?php bloginfo('name'); ?>
@@ -14,8 +14,9 @@
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 <?php wp_get_archives('type=monthly&format=link'); ?>
 <?php //comments_popup_script(); // off by default ?>
+<link rel="canonical" href="<?php bloginfo('url');?>" /> 
 <?php wp_head(); ?>
-<script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/lib/jquery-1.4.1.min.js"></script>
+<script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/lib/jquery-1.4.2.min.js"></script>
 <script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/lib/jquery.plugins.js"></script>
 <script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/javascript.js"></script>
 <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
