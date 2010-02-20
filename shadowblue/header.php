@@ -16,7 +16,7 @@
 <?php //comments_popup_script(); // off by default ?>
 <link rel="canonical" href="<?php bloginfo('url');?>" /> 
 <?php wp_head(); ?>
-<script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/lib/jquery-1.4.1.min.js"></script>
+<script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/lib/jquery-1.4.2.min.js"></script>
 <script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/lib/jquery.plugins.js"></script>
 <script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/javascript.js"></script>
 <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
