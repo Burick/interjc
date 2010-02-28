@@ -38,7 +38,7 @@ blockquote { padding:0 5px 0 10px; margin:10px 0 10px 20px; border-left:3px soli
 #top-page li.hover{ background:#112435;}
 #top-page .current_page_item a{ color:#b9d8d0;}
 #top-page .current_page_item a:hover{ color:#b9d8d0;}
-#top-page li.top-level{}
+#top-page .second-level li a{ display:block; height:34px;}
 #top-sns{ display:inline; float:right; height:28px; line-height:28px; margin:3px 30px 0 0;}
 #top-sns ul{ list-style:none;}
 #top-sns ul li{ float:right; display:inline; width:28px; height:28px; margin:0 0 0 5px;}
@@ -47,7 +47,7 @@ blockquote { padding:0 5px 0 10px; margin:10px 0 10px 20px; border-left:3px soli
 #top-sns ul li a.facebook{ background-position:-84px top;}
 #top-sns ul li a.twitter{ background-position:-56px top;}
 /*wrap*/
-#wrap { width:960px; margin:0 auto; text-align:left; position: relative; }
+#wrap { width:960px; margin:0 auto; text-align:left; position: relative; z-index:-10;}
 /*header*/
 #header { clear:both; color:#666; height:100px; }
 #header div.title { float:left; display:inline; margin:0 0 0 30px; }
