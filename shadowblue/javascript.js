@@ -22,7 +22,7 @@ if(ieVer>6){
 }
 //top-page
 $('#top-page>ul>li:gt(8)').addClass('hidden');
-$('#top-page>ul').addClass('top-level').children('li').addClass('top-level');
+$('#top-page>ul').addClass('top-level').children('li').addClass('top-level').children('ul').addClass('second-level');
 $('#top-page li.page_item').hover(
   function(){
     var $self = $(this);
