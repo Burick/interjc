@@ -47,7 +47,7 @@ blockquote { padding:0 5px 0 10px; margin:10px 0 10px 20px; border-left:3px soli
 #top-sns ul li a.facebook{ background-position:-84px top;}
 #top-sns ul li a.twitter{ background-position:-56px top;}
 /*wrap*/
-#wrap { width:960px; margin:0 auto; text-align:left; position: relative; z-index:-10;}
+#wrap { width:960px; margin:0 auto; text-align:left; position: relative; z-index:1;}
 /*header*/
 #header { clear:both; color:#666; height:100px; }
 #header div.title { float:left; display:inline; margin:0 0 0 30px; }
