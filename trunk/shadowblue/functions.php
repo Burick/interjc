@@ -235,11 +235,138 @@ function form($instance) {
 </p>
 <?php endif; ?>
 <?php
-
 }
-
 }
-
 add_action( 'widgets_init', create_function('', 'return register_widget("interjcCategoryPosts");') );
+
+//控制面板
+class shadowblueOptions {
+ 
+	/* -- 获取选项组 -- */
+	function getOptions() {
+
+		$options = get_option('shadowblue_options');
+		// 如果数据库中不存在该选项组, 设定这些选项的默认值, 并将它们插入数据库
+		if (!is_array($options)) {
+			// $options['notice'] = false;
+			// $options['notice_content'] = '';
+      
+			$options['footbar_display'] = 'on';
+      
+      $options['top_sns_twitter'] = '';
+      $options['top_sns_facebook'] = '';
+      $options['top_sns_email'] = '';
+      $options['top_sns_feed'] = '';
+      
+      $options['ad_type'] = 'pic';
+      $options['ad_content'] = '';
+      
+			update_option('shadowblue_options', $options);
+		}
+		// 返回选项组
+		return $options;
+	}
+ 
+	/* -- 初始化 -- */
+	function init() {
+
+		if(isset($_POST['shadowblue_save'])) {
+
+			$options = shadowblueOptions::getOptions();
+ 
+			$options['footbar_display'] = $_POST['footbar_display'];
+      
+			$options['top_sns_twitter'] = $_POST['top_sns_twitter'];
+			$options['top_sns_facebook'] = $_POST['top_sns_facebook'];
+			$options['top_sns_email'] = $_POST['top_sns_email'];
+			$options['top_sns_feed'] = $_POST['top_sns_feed'];
+      
+      $options['ad_type'] = $_POST['ad_type'];
+      $options['ad_content'] = $_POST['ad_content'];
+ 
+			update_option('shadowblue_options', $options);
+
+		} else {
+			shadowblueOptions::getOptions();
+		}
+ 
+		add_theme_page("ShadowBlue 主题设置", "主题设置", 'edit_themes', basename(__FILE__), array('shadowblueOptions', 'display'));
+	}
+ 
+	/* -- 标签页 -- */
+	function display() {
+		$options = shadowblueOptions::getOptions();
+?>
+ 
+<form action="#" method="post" enctype="multipart/form-data" name="shadowblue_form" id="shadowblue_form">
+	<div class="wrap">
+		<h2>Shadowblue 主题设置</h2>
+    
+    <!-- 顶部社会化链接 -->
+    <div class="top_sns">
+      <h3>社会化链接</h3>
+      <p class="twitter">
+      <label for="top_sns_twitter">Twitter 地址：</label>
+      <input id="top_sns_twitter" name="top_sns_twitter" type="text" style="width:260px;" <?php if($options['top_sns_twitter']){echo 'value=',$options['top_sns_twitter'];} ?> />
+      <span style="color:green;">请填写带 'http://' 的网址，留空则不显示该项</span>
+      </p>
+      <p class="facebook">
+      <label for="top_sns_facebook">Facebook 地址：</label>
+      <input id="top_sns_facebook" name="top_sns_facebook" type="text" style="width:260px;" <?php if($options['top_sns_facebook']){echo 'value=',$options['top_sns_facebook'];} ?> />
+      <span style="color:green;">请填写带 'http://' 的网址，留空则不显示该项</span>
+      </p>
+      <p class="email">
+      <label for="top_sns_email">邮箱地址：</label>
+      <input id="top_sns_email" name="top_sns_email" type="text" style="width:260px;" <?php if($options['top_sns_email']){echo 'value=',$options['top_sns_email'];} ?> />
+      <span style="color:green;">请填写正确格式的邮箱地址，留空则显示为网站管理员邮箱</span>
+      </p>
+      <p class="feed">
+      <label for="top_sns_Feed">订阅地址：</label>
+      <input id="top_sns_feed" name="top_sns_feed" type="text" style="width:260px;" <?php if($options['top_sns_feed']){echo 'value=',$options['top_sns_feed'];} ?> />
+      <span style="color:green;">请填写带 'http://' 的网址，留空则显示为网站原生订阅地址</span>
+      </p>
+    </div>
+    
+    <!-- 页首广告位 -->
+    <h3>页首广告位</h3>
+    <p class="ad_type">
+      <input id="ad_type_pic" type="radio" name="ad_type" value="pic" <?php if($options['ad_type']=='pic') echo 'checked="checked"'; ?> /><label for="ad_type_pic">显示为图片</label> &nbsp;&nbsp;
+      <input id="ad_type_code" type="radio" name="ad_type" value="code" <?php if($options['ad_type']=='code') echo 'checked="checked"'; ?> /><label for="ad_type_code">显示为广告</label> &nbsp;&nbsp; 
+      <input id="ad_type_none" type="radio" name="ad_type" value="none" <?php if($options['ad_type']=='none') echo 'checked="checked"'; ?> /><label for="ad_type_none">不显示</label>
+    </p>
+    <p>
+    <span style="color:green;">如果选择显示为图片，请在下方填写图片的地址（带 'http://' ）；<br />如果选择显示为广告，请将广告代码粘贴至下方。<br />图片及广告规格均为 468px × 60px</span> 
+    </p>
+		<textarea name="ad_content" cols="50" rows="10" id="ad_content" style="width:60%;font-size:12px;" class="code"><?php echo($options['ad_content']); ?></textarea>
+    
+    <!-- 底栏显示 -->
+    <h3>Footbar / 底栏</h3>
+    <p class="footbar">
+    <input id="footbar_display_on" name="footbar_display" type="radio" value="on" <?php if($options['footbar_display']=='on') echo 'checked="checked"'; ?> />
+    <label for="footbar_display_off">显示底栏</label> &nbsp;&nbsp;
+    <input id="footbar_display_off" name="footbar_display" type="radio" value="off" <?php if($options['footbar_display']=='off') echo 'checked="checked"'; ?> />
+    <label for="footbar_display_off">隐藏底栏</label>
+
+    </p>
+    
+		<!-- 提交按钮 -->
+		<p class="submit">
+			<input type="submit" name="shadowblue_save" value="更新信息" />
+		</p>
+	</div>
+ 
+</form>
+ 
+<?php
+	}
+}
+ 
+/**
+ * 登记初始化方法
+ */
+add_action('admin_menu', array('shadowblueOptions', 'init'));
+
+//引用
+$blogOption = get_option('shadowblue_options');
 
 ?>
