@@ -1,3 +1,4 @@
+<?php $blogOption = get_option('shadowblue_options'); ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head profile="http://gmpg.org/xfn/11">
@@ -44,10 +45,10 @@
     </div><!--/top-page-->
     <div id="top-sns">
     <ul>
-    <li><a href="<?php bloginfo('rss2_url');?>" class="feed" title="订阅本站">Feed</a></li>
-    <li><a href="mailto:<?php bloginfo('admin_email');?>" class="email" title="邮箱">Email</a></li>
-    <li><a href="http://www.facebook.com/interjc" class="facebook" title="Facebook" rel="external">Facebook</a></li>
-    <li><a href="http://twitter.com/interjc" class="twitter" title="Follow me via Twitter" rel="external">Twitter</a></li>
+    <li><a href="<?php if($blogOption['top_sns_feed']!=''){ echo $blogOption['top_sns_feed']; }else{bloginfo('rss2_url');}?>" class="feed" title="订阅本站">Feed</a></li>
+    <li><a href="mailto:<?php if($blogOption['top_sns_email']!=''){ echo $blogOption['top_sns_email']; } else { bloginfo('admin_email');} ?>" class="email" title="邮箱">Email</a></li>
+    <?php if($blogOption['top_sns_facebook']!=''){ ?><li><a href="<?php echo $blogOption['top_sns_facebook'];?>" class="facebook" title="Facebook" rel="external">Facebook</a></li><?php } ?>
+    <?php if($blogOption['top_sns_twitter']!=''){ ?><li><a href="<?php echo $blogOption['top_sns_twitter'];?>" class="twitter" title="Follow me via Twitter" rel="external">Twitter</a></li><?php } ?>
     </ul>
     </div><!--/top-sns-->
   </div>
@@ -69,8 +70,8 @@
       <!--.text-->
     </div>
     <!--.title-->
-    <div class="advertisement">
-    <?php include (TEMPLATEPATH . '/ad/ad_468_60.php'); ?>
+    <div class="advertisement" >
+    <?php if($blogOption['ad_type']!='none'){ include (TEMPLATEPATH . '/ad/ad_468_60.php');} ?>
     </div>
   </div>
   <!--/header-->
