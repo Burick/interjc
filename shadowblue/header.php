@@ -15,11 +15,14 @@
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 <?php wp_get_archives('type=monthly&format=link'); ?>
 <?php //comments_popup_script(); // off by default ?>
-<link rel="canonical" href="<?php bloginfo('url');?>" /> 
+<link rel="canonical" href="<?php bloginfo('url');?>" />
 <?php wp_head(); ?>
 <script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/lib/jquery-1.4.2.min.js"></script>
 <script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/lib/jquery.plugins.js"></script>
 <script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/javascript.js"></script>
+<?php if ( is_singular() && $blogOption['ajax_comment']=='on' ){ ?>
+<script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/comments-ajax.js"></script>
+<?php } ?>
 <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
 <!--[if lt IE 7]>
 <script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/ie6.js"></script>

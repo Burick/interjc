@@ -99,7 +99,11 @@ function theme_queue_js(){
       wp_enqueue_script( 'comment-reply' );
   }
 }
-add_action('get_header', 'theme_queue_js');
+if($blogOption['ajax_comment']!='on'){
+  add_action('get_header', 'theme_queue_js');
+}
+
+
 //获取自定义字段
 function get_custom_meta($s){
 	$simg = get_post_meta(get_the_ID(), $s, true);
@@ -258,8 +262,14 @@ class shadowblueOptions {
       $options['top_sns_email'] = '';
       $options['top_sns_feed'] = '';
       
+      $options['nav_display'] = 'cat';
+      
       $options['ad_type'] = 'pic';
       $options['ad_content'] = '';
+      
+      $options['footbar_display']='on';
+      
+      $options['ajax_comment'] = 'off';
       
 			update_option('shadowblue_options', $options);
 		}
@@ -281,9 +291,13 @@ class shadowblueOptions {
 			$options['top_sns_email'] = $_POST['top_sns_email'];
 			$options['top_sns_feed'] = $_POST['top_sns_feed'];
       
+      $options['nav_display'] = $_POST['nav_display'];
+      
       $options['ad_type'] = $_POST['ad_type'];
       $options['ad_content'] = $_POST['ad_content'];
- 
+      
+      $options['ajax_comment'] = $_POST['ajax_comment'];
+       
 			update_option('shadowblue_options', $options);
 
 		} else {
@@ -337,17 +351,34 @@ class shadowblueOptions {
     <p>
     <span style="color:green;">如果选择显示为图片，请在下方填写图片的地址（带 'http://' ）；<br />如果选择显示为广告，请将广告代码粘贴至下方。<br />图片及广告规格均为 468px × 60px</span> 
     </p>
-		<textarea name="ad_content" cols="50" rows="10" id="ad_content" style="width:60%;font-size:12px;" class="code"><?php echo($options['ad_content']); ?></textarea>
+		<textarea name="ad_content" cols="50" rows="10" id="ad_content" style="font-size:12px;" class="code"><?php echo($options['ad_content']); ?></textarea>
+
+    <!-- 分类/标签显示 -->
+    <h3>分类/标签显示</h3>
+    <p class="nav">
+    <input id="nav_display_cat" name="nav_display" type="radio" value="cat" <?php if($options['nav_display']=='cat') echo 'checked="checked"'; ?> />
+    <label for="nav_display_cat">显示分类</label> &nbsp;&nbsp;
+    <input id="nav_display_tag" name="nav_display" type="radio" value="tag" <?php if($options['nav_display']=='tag') echo 'checked="checked"'; ?> />
+    <label for="nav_display_tag">显示标签</label>
+    </p>
     
     <!-- 底栏显示 -->
     <h3>Footbar / 底栏</h3>
     <p class="footbar">
     <input id="footbar_display_on" name="footbar_display" type="radio" value="on" <?php if($options['footbar_display']=='on') echo 'checked="checked"'; ?> />
-    <label for="footbar_display_off">显示底栏</label> &nbsp;&nbsp;
+    <label for="footbar_display_on">显示底栏</label> &nbsp;&nbsp;
     <input id="footbar_display_off" name="footbar_display" type="radio" value="off" <?php if($options['footbar_display']=='off') echo 'checked="checked"'; ?> />
     <label for="footbar_display_off">隐藏底栏</label>
-
     </p>
+    
+    <!-- Ajax 评论 -->
+    <!-- <h3>Ajax 评论</h3>
+    <p class="ajax_comment">
+    <input id="ajax_comment_on" name="ajax_comment" type="radio" value="on" <?php if($options['ajax_comment']=='on') echo 'checked="checked"'; ?> />
+    <label for="ajax_comment_on">开启原生 Ajax 评论</label> &nbsp;&nbsp;
+    <input id="ajax_comment_off" name="ajax_comment" type="radio" value="off" <?php if($options['ajax_comment']=='off') echo 'checked="checked"'; ?> />
+    <label for="footbar_display_off">关闭原生 Ajax 评论</label>
+    </p> -->
     
 		<!-- 提交按钮 -->
 		<p class="submit">

@@ -157,7 +157,7 @@ a.switchFootbar{ position:absolute; top:0; left:50%; display:none;}
 ol.commentlist, ol.commentlist ul { list-style:none; }
 .comment { background:url(img/line-y.gif) repeat-y left; padding:0 0 0 15px; margin:5px 0 5px 15px; position:relative; }
 .depth-1 { background:none; padding-left:0; margin:0 0 10px 0; }
-.comment-author { clear:both; overflow:auto; height:1%; }
+.comment-author { clear:both; overflow:hidden; height:1%; }
 .comment-author img.avatar { float:left; display:inline; margin:0 5px 0 0; }
 .comment-meta { line-height:16px; float:left; display:inline; }
 .comment-meta .commentmetadata { display:block; }
@@ -167,6 +167,7 @@ ol.commentlist, ol.commentlist ul { list-style:none; }
 .comment-childs img.avatar { float:left; margin:0 5px 0 0; display:inline; }
 .comment-childs-meta { float:left; display:inline; padding:3px 0 0 0; line-height:16px; }
 .comment-childs .clear { margin:0 0 5px 0; }
+.comment-childs p{ padding-bottom:2px;}
 .thdrpy { clear:both; position:absolute; top:5px; left:180px; }
 .thdrpy a { background:url(img/reply.png) no-repeat left top; color:#ccc; display:inline; float:left; height:15px; width:15px; margin-top:2px; text-indent:-10000px; }
 .thdrpy a:hover { background-position:-15px top; color:#000; text-decoration:none; }
