@@ -294,7 +294,7 @@ class shadowblueOptions {
       $options['nav_display'] = $_POST['nav_display'];
       
       $options['ad_type'] = $_POST['ad_type'];
-      $options['ad_content'] = $_POST['ad_content'];
+      $options['ad_content'] = stripslashes($_POST['ad_content']);
       
       $options['ajax_comment'] = $_POST['ajax_comment'];
        
