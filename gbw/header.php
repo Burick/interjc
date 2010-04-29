@@ -8,9 +8,6 @@
 <meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
 <meta name="generator" content="WordPress <?php bloginfo('version'); ?>" />
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
-<link rel="stylesheet" href="style.css" type="text/css" media="screen" />
-<script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/lib/jquery.min.js"></script>
-<script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/javascript.js"></script>
 <!--[if lt IE 8]>
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/ie.css" type="text/css" />
 <![endif]-->
@@ -19,7 +16,6 @@
 <![endif]-->
 <!--[if IE 6]>
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/ie6.css" type="text/css" />
-<script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/ie6.js"></script>
 <![endif]-->
 <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="<?php bloginfo('rss2_url'); ?>" />
 <link rel="alternate" type="text/xml" title="RSS .92" href="<?php bloginfo('rss_url'); ?>" />
@@ -28,6 +24,11 @@
 <?php wp_get_archives('type=monthly&format=link'); ?>
 <?php //comments_popup_script(); // off by default ?>
 <?php wp_head(); ?>
+<script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/lib/jquery.min.js"></script>
+<script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/javascript.js"></script>
+<!--[if IE 6]>
+<script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/ie6.js"></script>
+<![endif]-->
 </head>
 <body>
 <div id="wrap">
