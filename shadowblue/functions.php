@@ -1,11 +1,12 @@
 <?php
-if ( function_exists('register_sidebars') )
+if ( function_exists('register_sidebars') ) {
 	register_sidebars(4,array(
 		'before_widget' => '<li id="%1$s" class="widget %2$s">',
 		'after_widget' => '</li>',
 		'before_title' => '<h2>',
 		'after_title' => '</h2>',
 	));
+}
 //nav.php内的cats和tags的选择
 function switchCatOrTag($w){
   switch($w){

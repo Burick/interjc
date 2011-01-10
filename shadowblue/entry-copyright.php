@@ -4,4 +4,3 @@
     <?php the_permalink() ?>
     </a></p>
 </div><!--/.entry-copyright-->
-<!--<div id="SRBacks"><script src="http://sr.ju690.com/static/script/SRbacks.js" type="text/javascript"></script></div>-->
