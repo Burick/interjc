@@ -31,7 +31,7 @@ blockquote { padding:0 5px 0 10px; margin:10px 0 10px 20px; border-left:3px soli
 #top-page ul { display:inline; float:left; list-style:none; margin:0 0 0 30px; }
 #top-page ul a { color:#ebebeb; font-size:12px; }
 #top-page ul a:hover { color:#b9d8d0; text-decoration:none; }
-#top-page .page_item { float:left; padding:0 15px; position:relative;}
+#top-page .page_item { float:left; padding:0 15px; position:relative; }
 #top-page .page_item ul { background:#666; display:none; width:200px; top:33px; left:-30px; position:absolute; z-index:50; text-align:left;}
 #top-page .page_item ul li { float:none; }
 #top-page .page_item ul li ul{ left:170px; top:0;}
