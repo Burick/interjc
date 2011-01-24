@@ -1,0 +1,18 @@
+/* Global & Reset */
+* { outline:0 none; margin:0; padding:0; }
+body { color:#333; background:#fff; font:12px/1.8 Tahoma, "Microsoft YaHei", SimSun, sans-serif; text-align:center;}
+br{ line-height:10px;}
+fieldset{ border:1px solid #ccc; padding:0 8px 4px 8px;}
+ol,ul,dl{ margin-left:2em;}
+dl dd{ margin-left:1em;}
+h1,h2,h3,h4,h5,h6{ font-size:12px; line-height:2;}
+h1{ font-size:24px;}
+h2{ font-size:18px;}
+h3{ font-size:16px;}
+h4{ font-size:14px;}
+a{ color:#09c;}
+a:hover{ color:#BF523B; text-decoration:none;}
+/* #wrap */
+#wrap{ text-align:left; width:960px; margin:10px auto;}
+/* #nav-top, #nav-in */
+#nav-top, #nav-in{ margin-bottom:5px;}
