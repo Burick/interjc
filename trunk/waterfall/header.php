@@ -44,6 +44,7 @@
     <div id="nav_buttons">
         <a id="nav_rss" href="http://feed.interjc.net/" title="订阅本站">RSS</a>
         <a id="nav_email" href="mailto:<?php bloginfo('admin_email');?>" title="Email">Email</a>
+        <a id="nav_t" href="http://t.qq.com/interjc7" title="腾讯微博">Twitter</a>
         <a id="nav_twitter" href="http://twitter.com/interjc" title="Twitter">Twitter</a>
         <a id="nav_facebook" href="http://facebook.com/interjc" title="Facebook">Facebook</a>
         <a id="nav_inter" href="http://interjc.net/tags/inter" title="我是正宗的内拉祖里">我是内拉祖里</a>
