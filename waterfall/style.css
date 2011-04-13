@@ -57,6 +57,7 @@ q, blockquote { padding:0 5px 0 10px; margin:10px 0 10px 20px; border-left:3px s
 #nav_buttons a#nav_inter{ background:url(img/inter.png) no-repeat; height:30px; width:30px;}
 #nav_buttons a#nav_comment{ background:url(img/nav-comment.jpg) no-repeat right top; height:29px; width:26px; margin-top:5px;}
 #nav_buttons a#nav_email { height:28px; width:28px; background: url(img/icons-sns.jpg) no-repeat -28px top;}
+#nav_buttons a#nav_t { height:28px; width:28px; background: url(img/icon-t.png) no-repeat left top;}
 #nav_buttons a#nav_twitter { height:28px; width:28px; background: url(img/icons-sns.jpg) no-repeat -56px top;}
 #nav_buttons a#nav_facebook { height:28px; width:28px; background: url(img/icons-sns.jpg) no-repeat right top;}
 /*导航栏按钮结束*/
