@@ -18,6 +18,6 @@ function getCookie(name) {
     }
     return null;
 }
-function dropCookie(name) {
+function removeCookie(name) {
     setCookie(name,"",-1);
 }
