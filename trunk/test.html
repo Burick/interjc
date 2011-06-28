@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>IE Bug</title>
+<style type="text/css">
+#a{ width:500px; height:300px; position:relative; background:#000;}
+#a a{ position:absolute; display:block; left:20px; top:20px; background:#ccc;}
+</style>
+</head>
+<body>
+<div id="wrap">
+    <div id="a">
+        <a href="#">//////////////////</a>
+    </div>
+    <input id="s1" type="button" value="开关div" />
+    <input id="s2" type="button" value="开关a" />
+</div>
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script type="text/javascript">
+jQuery(function($){
+var div = $('#a'), a = $('a', div);
+$('#s1').toggle(function(){
+    div.hide();
+},function(){
+    div.show();
+});
+$('#s2').toggle(function(){
+    a.hide();
+},function(){
+    a.show();
+});
+//End
+});
+</script>
+</body>
+</html>
