@@ -57,7 +57,6 @@ q, blockquote { padding:0 5px 0 10px; margin:10px 0 10px 20px; border-left:3px s
 #nav_buttons a#nav_inter{ background:url(img/inter.png) no-repeat; height:30px; width:30px;}
 #nav_buttons a#nav_comment{ background:url(img/nav-comment.jpg) no-repeat right top; height:29px; width:26px; margin-top:5px;}
 #nav_buttons a#nav_email { height:28px; width:28px; background: url(img/icons-sns.jpg) no-repeat -28px top;}
-#nav_buttons a#nav_t { height:28px; width:28px; background: url(img/icon-t.png) no-repeat left top;}
 #nav_buttons a#nav_twitter { height:28px; width:28px; background: url(img/icons-sns.jpg) no-repeat -56px top;}
 #nav_buttons a#nav_facebook { height:28px; width:28px; background: url(img/icons-sns.jpg) no-repeat right top;}
 /*导航栏按钮结束*/
@@ -173,16 +172,13 @@ html>body #searchform #searchsubmit,html>body #searchform #searchreset{top:2px;}
 #searchform #searchsubmit:hover{background-position:left bottom;}
 #searchform #searchreset{display:none;background-position:right top; right:2px;}
 #searchform #searchreset:hover{background-position:right bottom;}
-/*Searchform End*/
 /*Better Blogroll*/
 #better-blogroll { clear:both; }
 #better-blogroll li { padding:0 10px 3px 19px; width:100px; float:left; background: url(img/cup.png) no-repeat left top; }
 #better-blogroll a.co-worker { color:#F00; }
-/*Better Blogroll End*/
 /*widget_bb_blc_latestcomments*/
 li.widget_bb_blc_latestcomments ul li small a { font-size:11px; }
 li.blclastcommentedposts li.alternate small a { font-size:11px; }
-/*widget_bb_blc_latestcomments End*/
 /*Zelig Show Plugin*/
 .plugins-list{line-height:20px;}
 .plugins-list table{margin-bottom:10px; padding-bottom:10px; border-bottom:1px dotted #ccc;}
@@ -193,7 +189,8 @@ li.blclastcommentedposts li.alternate small a { font-size:11px; }
 .plugins-list .td-3{width:75%;}
 .alternate-plug-row{}
 .plug-row{background:#d7fafa;}
-/*Zelig Show Plugin End*/
+/* wp_syntax */
+div.wp_syntax{ width:auto;}
 /*回到页首*/
 #scroll{clear:both; width:32px; height:76px; position:fixed; left:50%; bottom:30px; margin:0 0 0 430px; z-index:99;}
 #scroll a{ background:url(img/scroll.jpg) no-repeat; float:left; display:inline; text-indent:-10000px; width:32px; height:38px;}
