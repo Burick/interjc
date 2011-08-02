@@ -1,0 +1,87 @@
+# copyright (c) 1993-1999 microsoft corp.
+#
+# this is a sample hosts file used by microsoft tcp/ip for windows.
+#
+# this file contains the mappings of ip addresses to host names. each
+# entry should be kept on an individual line. the ip address should
+# be placed in the first column followed by the corresponding host name.
+# the ip address and the host name should be separated by at least one
+# space.
+#
+# additionally, comments (such as these) may be inserted on individual
+# lines or following the machine name denoted by a '#' symbol.
+#
+# for example:
+#
+#      102.54.94.97     rhino.acme.com          # source server
+#       38.25.63.10     x.acme.com              # x client host
+
+127.0.0.1 localhost
+
+#Google系列
+203.208.46.29 picadaweb.google.com
+203.208.46.29 lh1.ggpht.com
+203.208.46.29 lh2.ggpht.com
+203.208.46.29 lh3.ggpht.com
+203.208.46.29 lh4.ggpht.com
+203.208.46.29 lh5.ggpht.com
+203.208.46.29 lh6.ggpht.com
+203.208.46.29 lh6.googleusercontent.com
+203.208.46.29 lh5.googleusercontent.com
+203.208.46.29 lh4.googleusercontent.com
+203.208.46.29 lh3.googleusercontent.com
+203.208.46.29 lh2.googleusercontent.com
+203.208.46.29 lh1.googleusercontent.com
+203.208.46.29 plus.google.com
+203.208.46.29 talkgadget.google.com
+
+74.125.39.99 clients4.google.com
+74.125.39.99 chrome.google.com
+74.125.39.99 clients2.google.com
+
+#Adobe 反反盗版
+127.0.0.1 activate.adobe.com
+127.0.0.1 practivate.adobe.com
+127.0.0.1 ereg.adobe.com
+127.0.0.1 activate.wip3.adobe.com
+127.0.0.1 wip3.adobe.com
+127.0.0.1 3dns-3.adobe.com
+127.0.0.1 3dns-2.adobe.com
+127.0.0.1 adobe-dns.adobe.com
+127.0.0.1 adobe-dns-2.adobe.com
+127.0.0.1 adobe-dns-3.adobe.com
+127.0.0.1 ereg.wip3.adobe.com
+127.0.0.1 activate-sea.adobe.com
+127.0.0.1 wwis-dubc1-vip60.adobe.com
+127.0.0.1 activate-sjc0.adobe.com
+
+# 以下都是在2006-2007年恶意修改IE属性，或者传播病毒或者木马的网站
+127.0.0.1   localhost
+127.0.0.1	858656.com
+127.0.0.1	my123.com
+127.0.0.1	8749.com
+127.0.0.1	4199.com
+127.0.0.1	7379.com
+127.0.0.1	7255.com
+127.0.0.1	3448.com
+127.0.0.1	7939.com
+127.0.0.1	8009.com
+127.0.0.1	piaoxue.com
+127.0.0.1	kzdh.com
+127.0.0.1	about.blank.la
+127.0.0.1	6781.com
+127.0.0.1	7322.com
+127.0.0.1	9991.com
+
+------ 屏蔽迅雷看看广告 ------
+0.0.0.0   pubstat.sandai.net
+0.0.0.0   mcfg.sandai.net
+0.0.0.0   biz5.sandai.net
+0.0.0.0   float.sandai.net
+0.0.0.0   recommend.xunlei.com
+0.0.0.0   cl.kankan.xunlei.com
+0.0.0.0    211.94.190.80
+0.0.0.0   mtips.xunlei.com
+0.0.0.0   211.94.190.80
+0.0.0.0   mtips.xunlei.com
+0.0.0.0   adsresult.joywell.com.cn
